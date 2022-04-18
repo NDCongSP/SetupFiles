@@ -4,6 +4,22 @@
     <name>DevExpress.Printing.v20.2.Core</name>
   </assembly>
   <members>
+    <member name="N:DevExpress.Data">
+      <summary>
+        <para>Contains classes implementing the common data management functionality for DevExpress controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Data.IDataSourceAssignable">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Data.IDataSourceAssignable.DataAdapter">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="N:DevExpress.DocumentServices.ServiceModel">
       <summary>
         <para>Contains classes that provide service model functionality to a report service.</para>
@@ -12991,31 +13007,31 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
       <summary>
         <para>Overrides the <see cref="P:DevExpress.XtraPrinting.BarCode.BarCodeGeneratorBase.CalcCheckSum"/> property.</para>
       </summary>
-      <value>true if the bar code object needs a checksum to be calculated; otherwise, false.</value>
+      <value>true, to calculate a checksum for the barcode; false, otherwise.</value>
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.CodabarGenerator.StartSymbol">
       <summary>
-        <para>Gets or sets the first (start) symbol used to code the bar code&#39;s structure.</para>
+        <para>Gets or sets the first (start) symbol used to code the barcode&#39;s structure.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.BarCode.CodabarStartStopSymbol"/> enumeration value that specifies the start symbol.</value>
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.CodabarGenerator.StopSymbol">
       <summary>
-        <para>Gets or sets the last (stop) symbol used to code the bar code&#39;s structure.</para>
+        <para>Gets or sets the last (stop) symbol used to code the barcode&#39;s structure.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.BarCode.CodabarStartStopSymbol"/> enumeration value that specifies the stop symbol.</value>
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.CodabarGenerator.SymbologyCode">
       <summary>
-        <para>For internal use. Gets the bar code symbology for the current generator object.</para>
+        <para>For internal use. Gets the barcode symbology for the current generator object.</para>
       </summary>
       <value>A DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology enumeration value.</value>
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.CodabarGenerator.WideNarrowRatio">
       <summary>
-        <para>Gets or sets the density of a bar code&#39;s bars.</para>
+        <para>Gets or sets the density of a barcode&#39;s bars.</para>
       </summary>
-      <value>A float value specifying the density of a bar code&#39;s bars.</value>
+      <value>A float value specifying the density of a barcode&#39;s bars.</value>
     </member>
     <member name="T:DevExpress.XtraPrinting.BarCode.CodabarStartStopPair">
       <summary>
@@ -13389,9 +13405,17 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.DataMatrixGenerator.CompactionMode">
       <summary>
-        <para>Gets or sets whether textual information or a byte array should be used as the bar code&#39;s data, as well as its encoding.</para>
+        <para>Gets or sets whether text or binary mode should be used to encode the barcode&#39;s data.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.BarCode.DataMatrixCompactionMode"/> enumeration value.</value>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BarCode.DataMatrixGenerator.GetEffectiveMatrixSize(System.String,System.Byte[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="text"></param>
+      <param name="binaryData"></param>
+      <returns></returns>
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.DataMatrixGenerator.MatrixSize">
       <summary>
@@ -13972,7 +13996,7 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.PDF417Generator.CompactionMode">
       <summary>
-        <para>Gets or sets whether textual information or a byte array should be used as the bar code&#39;s data.</para>
+        <para>Gets or sets whether text or binary mode should be used to encode the barcode&#39;s data.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.BarCode.PDF417CompactionMode"/> enumeration value.</value>
     </member>
@@ -14134,7 +14158,7 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.XtraPrinting.BarCode.QRCodeGenerator.CompactionMode">
       <summary>
-        <para>Gets or sets whether numeric, alpha-numeric or byte information should be used as the bar code&#39;s data.</para>
+        <para>Gets or sets whether numeric, alphanumeric or byte mode should be used to encode the barcode&#39;s data.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode"/> enumeration value.</value>
     </member>
@@ -14926,6 +14950,12 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
       <param name="defaultValue"></param>
       <typeparam name="T"></typeparam>
     </member>
+    <member name="P:DevExpress.XtraPrinting.Brick.Tag">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraPrinting.Brick.Target">
       <summary>
         <para>Gets or sets the target attribute assigned to this <see cref="T:DevExpress.XtraPrinting.Brick"/> and used when a <see cref="P:DevExpress.XtraPrinting.Brick.Url"/> property is specified.</para>
@@ -15544,6 +15574,128 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
         <para></para>
       </summary>
       <param name="pages"></param>
+    </member>
+    <member name="T:DevExpress.XtraPrinting.BrickSelector">
+      <summary>
+        <para>Selects bricks from a document or document page(s).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricks(DevExpress.XtraPrinting.Document)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks from a document.</para>
+      </summary>
+      <param name="document">The document from which to return visual bricks.</param>
+      <returns>Visual bricks from the specified document.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricks(DevExpress.XtraPrinting.Page)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks from a document page.</para>
+      </summary>
+      <param name="page">The page from which to return visual bricks.</param>
+      <returns>Visual bricks from the specified page.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricks(System.Collections.Generic.IEnumerable{DevExpress.XtraPrinting.Page})">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks from document pages.</para>
+      </summary>
+      <param name="pages">A collection of pages from which to return visual bricks.</param>
+      <returns>Visual bricks from the specified pages.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricks``1(DevExpress.XtraPrinting.Document)">
+      <summary>
+        <para>A static method that returns an enumeration of visual brick descendants from a document.</para>
+      </summary>
+      <param name="document">The document from which to return bricks.</param>
+      <typeparam name="TBrick">The type of bricks to return.</typeparam>
+      <returns>Bricks from the specified document.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricks``1(DevExpress.XtraPrinting.Page)">
+      <summary>
+        <para>A static method that returns an enumeration of visual brick descendants from a document page.</para>
+      </summary>
+      <param name="page">The page from which to return bricks.</param>
+      <typeparam name="TBrick">The type of bricks to return.</typeparam>
+      <returns>Bricks from the specified page.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricks``1(System.Collections.Generic.IEnumerable{DevExpress.XtraPrinting.Page})">
+      <summary>
+        <para>A static method that returns an enumeration of visual brick descendants from document pages.</para>
+      </summary>
+      <param name="pages">The pages from which to return bricks.</param>
+      <typeparam name="TBrick">The type of bricks to return.</typeparam>
+      <returns>Bricks from the specified pages.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByTag(DevExpress.XtraPrinting.Document,System.Object)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks with the specified tag from a document.</para>
+      </summary>
+      <param name="document">The document from which to return bricks.</param>
+      <param name="tag">The tag value. A brick is returned if its tag value matches the specified value.</param>
+      <returns>Bricks from the specified document.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByTag(DevExpress.XtraPrinting.Page,System.Object)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks with the specified tag from a document page.</para>
+      </summary>
+      <param name="page">The page from which to return bricks.</param>
+      <param name="tag">The tag value. A brick is returned if its tag value matches the specified value.</param>
+      <returns>Bricks from the specified page.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByTag(System.Collections.Generic.IEnumerable{DevExpress.XtraPrinting.Page},System.Object)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks with the specified tag from document pages.</para>
+      </summary>
+      <param name="pages">The pages from which to return bricks.</param>
+      <param name="tag">The tag value. A brick is returned if its tag value matches the specified value.</param>
+      <returns>Bricks from the specified pages.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByText(DevExpress.XtraPrinting.Document,System.String)">
+      <summary>
+        <para>A static method that returns an enumeration of text bricks with specified text from a document.</para>
+      </summary>
+      <param name="document">The document from which to return bricks.</param>
+      <param name="text">The text value. A brick is returned if its text value matches the specified value.</param>
+      <returns>Bricks from the specified document.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByText(DevExpress.XtraPrinting.Page,System.String)">
+      <summary>
+        <para>A static method that returns an enumeration of text bricks with specified text from a document page.</para>
+      </summary>
+      <param name="page">The page from which to return bricks.</param>
+      <param name="text">The text value. A brick is returned if its text value matches the specified value.</param>
+      <returns>Bricks from the specified page.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByText(System.Collections.Generic.IEnumerable{DevExpress.XtraPrinting.Page},System.String)">
+      <summary>
+        <para>A static method that returns an enumeration of text bricks with specified text from document pages.</para>
+      </summary>
+      <param name="pages">A collection of pages from which to return bricks.</param>
+      <param name="text">The text value. A brick is returned if its text value matches the specified value.</param>
+      <returns>Bricks from the specified pages.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByXRControl(DevExpress.XtraPrinting.Document,System.Object)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks generated by the specified XtraReport control from a document.</para>
+      </summary>
+      <param name="document">The document from which to return bricks.</param>
+      <param name="xrControl">An XRControl descendant. A brick is returned if it was generated by this control.</param>
+      <returns>Bricks from the specified document.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByXRControl(DevExpress.XtraPrinting.Page,System.Object)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks generated by the specified XtraReport control from a document page.</para>
+      </summary>
+      <param name="page">The page from which to return bricks.</param>
+      <param name="xrControl">An XRControl descendant. A brick is returned if it was generated by this control.</param>
+      <returns>Bricks from the specified page.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByXRControl(System.Collections.Generic.IEnumerable{DevExpress.XtraPrinting.Page},System.Object)">
+      <summary>
+        <para>A static method that returns an enumeration of visual bricks generated by the specified XtraReport control from document pages.</para>
+      </summary>
+      <param name="pages">The pages from which to return bricks.</param>
+      <param name="xrControl">An XRControl descendant. A brick is returned if it was generated by this control.</param>
+      <returns>Bricks from the specified pages.</returns>
     </member>
     <member name="N:DevExpress.XtraPrinting.Caching">
       <summary>
@@ -17313,7 +17465,7 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="T:DevExpress.XtraPrinting.Export.BrickViewData">
       <summary>
-        <para>Defines the common properties representing the view data of a brick.</para>
+        <para>For internal use.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraPrinting.Export.BrickViewData.#ctor(DevExpress.XtraPrinting.BrickStyle,System.Drawing.RectangleF,DevExpress.XtraPrinting.Export.ITableCell)">
@@ -18510,9 +18662,9 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
         <para>Provides the essential functionality for document printing.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.XtraPrinting.IGraphics.AddDrawingAction(DevExpress.Printing.Core.NativePdfExport.DeferredAction)">
+    <member name="M:DevExpress.XtraPrinting.IGraphics.AddDrawingAction(DevExpress.XtraPrinting.BrickExporters.DeferredAction)">
       <summary>
-        <para>For internal use.</para>
+        <para></para>
       </summary>
       <param name="action"></param>
     </member>
@@ -18607,13 +18759,6 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
         <para>For internal use.</para>
       </summary>
       <value></value>
-    </member>
-    <member name="M:DevExpress.XtraPrinting.ImageBrick.HandleImage(DevExpress.XtraPrinting.Drawing.ImageSource)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="value"></param>
-      <returns></returns>
     </member>
     <member name="P:DevExpress.XtraPrinting.ImageBrick.HtmlImageUrl">
       <summary>
@@ -23288,22 +23433,22 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="T:DevExpress.XtraPrinting.SignatureImageDisplayMode">
       <summary>
-        <para></para>
+        <para>Contains settings that specify whether an <see cref="T:DevExpress.XtraReports.UI.XRPdfSignature"/> control should show the signature image.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPrinting.SignatureImageDisplayMode.Hide">
       <summary>
-        <para></para>
+        <para>Hide the signature image.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPrinting.SignatureImageDisplayMode.Show">
       <summary>
-        <para></para>
+        <para>Show the signature image.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPrinting.SignatureImageDisplayMode.ShowCertificateNameAsImage">
       <summary>
-        <para></para>
+        <para>Show the certificate name in place of the signature image.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraPrinting.SizeMode">
@@ -24344,6 +24489,12 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
       </summary>
       <value>A value that specifies whether conditional formatting rules are preserved in the exported document. The DefaultBoolean.Default value is equivalent to True.</value>
     </member>
+    <member name="P:DevExpress.XtraPrinting.XlsExportOptionsEx.AllowConditionalFormattingGlyphs">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraPrinting.XlsExportOptionsEx.AllowFixedColumnHeaderPanel">
       <summary>
         <para>Gets or sets whether the column header panel is anchored to the top of the export document and not scrolled vertically. Only available in data-aware export mode.</para>
@@ -24698,6 +24849,12 @@ The DefaultBoolean.Default value is equivalent to True.</value>
         <para>Gets or sets whether conditional formatting rules applied to columns are preserved in the exported document.Only available in data-aware export mode.</para>
       </summary>
       <value>A value that specifies whether conditional formatting rules are preserved in the exported document. The DefaultBoolean.Default value is equivalent to True.</value>
+    </member>
+    <member name="P:DevExpress.XtraPrinting.XlsxExportOptionsEx.AllowConditionalFormattingGlyphs">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraPrinting.XlsxExportOptionsEx.AllowFixedColumnHeaderPanel">
       <summary>

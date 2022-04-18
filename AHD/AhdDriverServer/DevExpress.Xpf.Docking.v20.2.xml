@@ -29,9 +29,149 @@
         <para>The content item is not activated.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Docking.Appearance">
+      <summary>
+        <para>Contains a LayoutItem cell&#39;s states.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Appearance.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Docking.Appearance"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.Appearance.Active">
+      <summary>
+        <para>Gets or sets appearance properties that are applied to the item when it is active. This is a dependency property.</para>
+      </summary>
+      <value>Appearance properties applied to the panel.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Appearance.ActiveProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.Appearance.Active"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.Appearance.Normal">
+      <summary>
+        <para>Gets or sets appearance properties that are applied to the item when it is in the normal state (inactive). This is a dependency property.</para>
+      </summary>
+      <value>Appearance properties applied to the item.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Appearance.NormalProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.Appearance.Normal"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.AppearanceObject">
+      <summary>
+        <para>Contains an item&#39;s appearance properties.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.AppearanceObject.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Docking.AppearanceObject"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.Background">
+      <summary>
+        <para>Gets or sets the brush used to paint the item&#39;s background. This is a dependency property.</para>
+      </summary>
+      <value>The item&#39;s background.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.BackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.Background"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.FontFamily">
+      <summary>
+        <para>Gets or sets the item&#39;s font weight. This is a dependency property.</para>
+      </summary>
+      <value>The item&#39;s font family.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.FontFamilyProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.FontFamily"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.FontSize">
+      <summary>
+        <para>Gets or sets the item&#39;s font size. This is a dependency property.</para>
+      </summary>
+      <value>The item&#39;s font size.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.FontSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.FontSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.FontStretch">
+      <summary>
+        <para>Gets or sets the item&#39;s font stretch. This is a dependency property.</para>
+      </summary>
+      <value>The item&#39;s font stretch.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.FontStretchProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.FontStretch"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.FontStyle">
+      <summary>
+        <para>Gets or sets the item&#39;s font style. This is a dependency property.</para>
+      </summary>
+      <value>The item&#39;s font style.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.FontStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.FontStyle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.FontWeight">
+      <summary>
+        <para>Gets or sets the item&#39;s font weight. This is a dependency property.</para>
+      </summary>
+      <value>The item&#39;s font weight.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.FontWeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.FontWeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.Foreground">
+      <summary>
+        <para>Gets or sets the brush used to paint the item&#39;s foreground. This is a dependency property.</para>
+      </summary>
+      <value>The item&#39;s foreground.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.ForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.Foreground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.AppearanceObject.TabBackgroundColor">
+      <summary>
+        <para>Gets or sets the background color of the item tab header when it is placed in a DocumentGroup. This is a dependency property.</para>
+      </summary>
+      <value>The background color of the item tab header.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.AppearanceObject.TabBackgroundColorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.AppearanceObject.TabBackgroundColor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
     <member name="T:DevExpress.Xpf.Docking.AutoHideGroup">
       <summary>
-        <para>A container for auto-hidden dock panels at a specific side of the DockLayoutManager.</para>
+        <para>A container for auto-hidden dock panels.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Docking.AutoHideGroup.#ctor">
@@ -53,10 +193,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.AutoHideGroup.AutoHideSpeed">
       <summary>
-        <para>Gets or sets the time, in milliseconds, required to open/close an auto-hidden panel belonging to the current group.
-This is a dependency property.</para>
+        <para>Gets or sets the time, in milliseconds, required to open/close an auto-hidden panel belonging to the current group. This is a dependency property.</para>
       </summary>
-      <value>An integer value that specifies the time, in milliseconds, required to open/close an auto-hidden panel belonging to the current group.</value>
+      <value>The time, in milliseconds, required to open/close an auto-hidden panel belonging to the current group.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.AutoHideGroup.AutoHideSpeedProperty">
       <summary>
@@ -71,10 +210,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.AutoHideGroup.DockType">
       <summary>
-        <para>Gets or sets the side of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> at which the current <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> object is docked.
-This is a dependency property.</para>
+        <para>Gets or sets the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/>&#39;s side to which the <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> is docked. This is a dependency property.</para>
       </summary>
-      <value>A Dock value that specifies the side of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> at which the current <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> object is docked.</value>
+      <value>The <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/>&#39;s side to which the current <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> object is docked.</value>
     </member>
     <member name="E:DevExpress.Xpf.Docking.AutoHideGroup.DockTypeChanged">
       <summary>
@@ -281,6 +419,46 @@ This is a dependency property.</para>
         <para>An auto-hidden panel is expanded when hovered over by the mouse.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Docking.Base.AutoHideExpandState">
+      <summary>
+        <para>Contains values that identify an auto-hidden state&#39;s expand modes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Base.AutoHideExpandState.Expanded">
+      <summary>
+        <para>The panel is expanded to fit the entire client window area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Base.AutoHideExpandState.Hidden">
+      <summary>
+        <para>The panel is hidden from view.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Base.AutoHideExpandState.Visible">
+      <summary>
+        <para>The panel is visible, but not expanded.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.Base.AutoHideMode">
+      <summary>
+        <para>Contains values that identify auto-hide modes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Base.AutoHideMode.Default">
+      <summary>
+        <para>The same as <see cref="F:DevExpress.Xpf.Docking.Base.AutoHideMode.Overlay"/>.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Base.AutoHideMode.Inline">
+      <summary>
+        <para>The expanded auto-hidden panels are displayed in-line between other panels.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.Base.AutoHideMode.Overlay">
+      <summary>
+        <para>The expanded auto-hidden panels overlay other panels.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.Docking.Base.ClosedPanelsBarVisibility">
       <summary>
         <para>Contains values that specify the visibility state of the Closed Panels bar, used to access closed panels.</para>
@@ -418,7 +596,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.Base.DockItemDockingEventArgs.DockType">
       <summary>
-        <para>Gets or sets how an item is being docked to another item.</para>
+        <para>Gets how an item is being docked to another item.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Layout.Core.DockType"/> value that specifies how an item is being docked to another item.</value>
     </member>
@@ -455,9 +633,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.Base.DockItemDraggingEventArgs.ScreenPoint">
       <summary>
-        <para>Gets or sets the current point at which the item is being dragged.</para>
+        <para>Gets the current point at which the item is being dragged.</para>
       </summary>
-      <value>A Point structure that specifies the point where the item is being dragged.</value>
+      <value>The point where the item is being dragged.</value>
     </member>
     <member name="T:DevExpress.Xpf.Docking.Base.DockItemDraggingEventHandler">
       <summary>
@@ -807,6 +985,65 @@ This is a dependency property.</para>
       <param name="sender">A <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> object that fires this event.</param>
       <param name="e">A <see cref="T:DevExpress.Xpf.Docking.Base.LayoutItemSizeChangedEventArgs"/> object that represents data for the event.</param>
     </member>
+    <member name="T:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs">
+      <summary>
+        <para>Supplies data for the <see cref="E:DevExpress.Xpf.Docking.DockLayoutManager.ShowingDockHints"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.Disable(DevExpress.Xpf.Docking.DockHint)">
+      <summary>
+        <para>Disables the DockHint.</para>
+      </summary>
+      <param name="hint">The <see cref="T:DevExpress.Xpf.Docking.DockHint"/> that should be disabled.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.DisableAll">
+      <summary>
+        <para>Disables all DockHints.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.DraggingSource">
+      <summary>
+        <para>Gets the dragged item&#39;s owner.</para>
+      </summary>
+      <value>The dragged item&#39;s owner.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.DraggingTarget">
+      <summary>
+        <para>Gets the target of the dragged item.</para>
+      </summary>
+      <value>The dragged item&#39;s target.</value>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.GetIsEnabled(DevExpress.Xpf.Docking.DockHint)">
+      <summary>
+        <para>Gets whether the DockHint item is enabled.</para>
+      </summary>
+      <param name="hint">The item from which the property value is obtained.</param>
+      <returns>true, if the item is enabled; otherwise false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.GetIsVisible(DevExpress.Xpf.Docking.DockGuide)">
+      <summary>
+        <para>Gets whether the DockGuide item is visible.</para>
+      </summary>
+      <param name="hint">The item from which the property value is obtained.</param>
+      <returns>true, if the item is visible; otherwise false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.Hide(DevExpress.Xpf.Docking.DockGuide)">
+      <summary>
+        <para>Hides the DockGuide item.</para>
+      </summary>
+      <param name="hint">The <see cref="T:DevExpress.Xpf.Docking.DockGuide"/> item that should be hidden.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.Hide(DevExpress.Xpf.Docking.DockHint)">
+      <summary>
+        <para>Hides the DockHint item.</para>
+      </summary>
+      <param name="hint">The <see cref="T:DevExpress.Xpf.Docking.DockHint"/> item that should be hidden.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.Base.ShowingDockHintsEventArgs.HideAll">
+      <summary>
+        <para>Hides all DockGuides.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.Docking.Base.ShowingMenuEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.Xpf.Docking.DockLayoutManager.ShowingMenu"/> event.</para>
@@ -1034,10 +1271,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.AllowHide">
       <summary>
-        <para>Gets or sets whether the item can be hidden (auto-hidden, for dock items).
-This is a dependency property.</para>
+        <para>Gets or sets whether the item can be hidden (auto-hidden, for dock items). This is a dependency property.</para>
       </summary>
-      <value>true if the item can be hidden (auto-hidden, for dock items); otherwise, false.</value>
+      <value>true, if the item can be hidden (auto-hidden, for dock items); otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.AllowHideProperty">
       <summary>
@@ -1061,7 +1297,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets or sets whether the current item can be minimized. This property is supported for floating <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> objects.</para>
       </summary>
-      <value>true if the current item can be minimized; otherwise, false.</value>
+      <value>true, if the current item can be minimized; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.AllowMinimizeProperty">
       <summary>
@@ -1135,10 +1371,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.Appearance">
       <summary>
-        <para>Gets or sets the object that provides appearance settings for the item&#39;s captions.
-This is a dependency property.</para>
+        <para>Gets or sets the object that provides appearance settings for the item&#39;s captions. This is a dependency property.</para>
       </summary>
-      <value>A DevExpress.Xpf.Docking.Appearance object that specifies the appearance settings for the item&#39;s caption.</value>
+      <value>The appearance settings of the item caption.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.AppearanceProperty">
       <summary>
@@ -1203,10 +1438,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionHorizontalAlignment">
       <summary>
-        <para>Gets or sets the horizontal alignment of the item&#39;s caption.
-This is a dependency property.</para>
+        <para>Gets or sets the item Caption&#39;s horizontal alignment. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.HorizontalAlignment"/> value that specifies the caption&#39;s horizontal alignment.</value>
+      <value>The Caption&#39;s horizontal alignment.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionHorizontalAlignmentProperty">
       <summary>
@@ -1216,10 +1450,10 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionImage">
       <summary>
-        <para>Gets or sets the image displayed within the item&#39;s caption.
+        <para>Gets or sets the image displayed within the item&#39;s <see cref="P:DevExpress.Xpf.Docking.BaseLayoutItem.Caption"/>.
 This is a dependency property.</para>
       </summary>
-      <value>An ImageSource object that specifies the image displayed within the item&#39;s caption.</value>
+      <value>An ImageSource object that specifies the image displayed within the item&#39;s <see cref="P:DevExpress.Xpf.Docking.BaseLayoutItem.Caption"/>.</value>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionImageLocation">
       <summary>
@@ -1254,10 +1488,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionLocation">
       <summary>
-        <para>Gets or sets the position of the item&#39;s caption.
-This is a dependency property.</para>
+        <para>Gets or sets the position of the item&#39;s Caption. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Docking.CaptionLocation"/> value that specifies the position where the caption is displayed.</value>
+      <value>The position where the Caption is displayed.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionLocationProperty">
       <summary>
@@ -1310,10 +1543,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionWidth">
       <summary>
-        <para>Gets or sets the width of the item&#39;s caption, which is in effect when the CaptionAlignMode property is set to Custom.
-This is a dependency property.</para>
+        <para>Gets or sets the width of the item&#39;s Caption area. This is a dependency property.</para>
       </summary>
-      <value>A Double value that specifies the width of the item&#39;s caption.</value>
+      <value>The width of the item&#39;s Caption area.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionWidthProperty">
       <summary>
@@ -1403,8 +1635,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.ControlBoxContentTemplate">
       <summary>
-        <para>Gets or sets the template that defines how the object assigned to the <see cref="P:DevExpress.Xpf.Docking.BaseLayoutItem.ControlBoxContent"/> property is represented onscreen. 
-This is a dependency property.</para>
+        <para>Gets or sets the template that defines how the object assigned to the <see cref="P:DevExpress.Xpf.Docking.BaseLayoutItem.ControlBoxContent"/> property is displayed onscreen. This is a dependency property.</para>
       </summary>
       <value>A <see cref="T:System.Windows.DataTemplate"/> object that defines the control box region&#39;s presentation.</value>
     </member>
@@ -1484,10 +1715,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.FloatSize">
       <summary>
-        <para>Gets or sets the size of the item when it is floating.
-This is a dependency property.</para>
+        <para>Gets or sets the size of the item when it is floating. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Drawing.Size"/> structure representing the item&#39;s size, in pixels.</value>
+      <value>The item&#39;s size, in pixels.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.FloatSizeProperty">
       <summary>
@@ -1825,10 +2055,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.ItemHeight">
       <summary>
-        <para>Gets or sets the height for the specified <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object.
-This is a dependency property.</para>
+        <para>Gets or sets the height for the specified <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.GridLength"/> object, which is the height of the specified <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object.</value>
+      <value>The height of the <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.BaseLayoutItem.ItemHeightProperty">
       <summary>
@@ -1905,9 +2134,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.Parent">
       <summary>
-        <para>Gets or sets the item&#39;s parent group.</para>
+        <para>Gets the item&#39;s parent group.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Docking.LayoutGroup"/> object which is the item&#39;s parent.</value>
+      <value>The item&#39;s parent.</value>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.ParentCollectionName">
       <summary>
@@ -1942,8 +2171,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.ShowCaptionImage">
       <summary>
-        <para>Gets or sets whether the <see cref="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionImage"/> is visible.
-This is a dependency property.</para>
+        <para>Gets or sets whether the <see cref="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionImage"/> is visible. This is a dependency property.</para>
       </summary>
       <value>true if the <see cref="P:DevExpress.Xpf.Docking.BaseLayoutItem.CaptionImage"/> is visible; otherwise, false.</value>
     </member>
@@ -1961,8 +2189,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.BaseLayoutItem.ShowCloseButton">
       <summary>
-        <para>Allows you to hide the Close (&#39;x&#39;) button for the current item. This property is only supported for <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/>, <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> and <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> objects.
-This is a dependency property.</para>
+        <para>Allows you to hide the current item&#39;s Close button. This property is only supported for <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> and <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> objects. This is a dependency property.</para>
       </summary>
       <value>true, if the Close (&#39;x&#39;) button is visible; otherwise, false.</value>
     </member>
@@ -2352,7 +2579,7 @@ This value matches the value of the panel&#39;s Name property.</param>
     </member>
     <member name="F:DevExpress.Xpf.Docking.ClosePageButtonShowMode.InTabControlHeader">
       <summary>
-        <para>The Close button is displayed in the tab container&#39;s header</para>
+        <para>The Close button is displayed in the tab container&#39;s header.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Docking.ClosePageButtonShowMode.NoWhere">
@@ -2996,6 +3223,172 @@ This value matches the value of the panel&#39;s Name property.</param>
       <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to be restored.</param>
       <returns>A Boolean value that indicates that the panel has been restored successfully.</returns>
     </member>
+    <member name="T:DevExpress.Xpf.Docking.DockControllerCommand">
+      <summary>
+        <para>Provides commands on dock panels.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.DockControllerCommand.Activate">
+      <summary>
+        <para>Activates a specific dock item.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface and is routed through the element tree.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.DockControllerCommand.Close">
+      <summary>
+        <para>Closes a specific dock item.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.DockControllerCommand.Dock">
+      <summary>
+        <para>Docks a floating or an auto-hidden dock item.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.DockControllerCommand.Float">
+      <summary>
+        <para>Makes the specified item floating.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.DockControllerCommand.Hide">
+      <summary>
+        <para>Enables the auto-hide functionality for the item/panel and hides it at a corresponding edge of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.DockControllerCommand.Restore">
+      <summary>
+        <para>Restores a closed (hidden) panel at its previous dock position.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.DockGuide">
+      <summary>
+        <para>Contains values that specify dock hint sections. Each DockGuide consists of multiple <see cref="T:DevExpress.Xpf.Docking.DockHint"/>s.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockGuide.Bottom">
+      <summary>
+        <para>Displays dock hints at the bottom. The DockGuide consists of the <see cref="F:DevExpress.Xpf.Docking.DockHint.AutoHideBottom"/> and <see cref="F:DevExpress.Xpf.Docking.DockHint.SideBottom"/> DockHints.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockGuide.Center">
+      <summary>
+        <para>Displays dock hints at the center. The DockGuide consists of the following DockHints: When the <see cref="P:DevExpress.Xpf.Docking.DockLayoutManager.DockingStyle"/> is <see cref="F:DevExpress.Xpf.Docking.DockingStyle.VS2010"/>, the DockGuide includes the following extra DockHints:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockGuide.Left">
+      <summary>
+        <para>Displays dock hints at the left. The DockGuide consists of the <see cref="F:DevExpress.Xpf.Docking.DockHint.AutoHideLeft"/> and <see cref="F:DevExpress.Xpf.Docking.DockHint.SideLeft"/> DockHints.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockGuide.Right">
+      <summary>
+        <para>Displays dock hints at the right. The DockGuide consists of the <see cref="F:DevExpress.Xpf.Docking.DockHint.AutoHideRight"/> and <see cref="F:DevExpress.Xpf.Docking.DockHint.SideRight"/> DockHints.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockGuide.Top">
+      <summary>
+        <para>Displays dock hints at the top. The DockGuide consists of the <see cref="F:DevExpress.Xpf.Docking.DockHint.AutoHideTop"/> and <see cref="F:DevExpress.Xpf.Docking.DockHint.SideTop"/> DockHints.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.DockHint">
+      <summary>
+        <para>Contains values that specify the dock hint.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.AutoHideBottom">
+      <summary>
+        <para>Auto-hides hint at the bottom.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.AutoHideLeft">
+      <summary>
+        <para>Auto-hides hint at the left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.AutoHideRight">
+      <summary>
+        <para>Auto-hides hint at the right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.AutoHideTop">
+      <summary>
+        <para>Auto-hides hint at the top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.Center">
+      <summary>
+        <para>Displays the dock hint at the center..</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.CenterBottom">
+      <summary>
+        <para>Displays the dock hint at the center bottom.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.CenterLeft">
+      <summary>
+        <para>Displays the dock hint at the center left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.CenterRight">
+      <summary>
+        <para>Displays the dock hint at the center right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.CenterTop">
+      <summary>
+        <para>Displays the dock hint at the center top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.SideBottom">
+      <summary>
+        <para>Displays the dock hint at the bottom.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.SideLeft">
+      <summary>
+        <para>Displays the dock hint at the left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.SideRight">
+      <summary>
+        <para>Displays the dock hint at the right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.SideTop">
+      <summary>
+        <para>Displays the dock hint at the top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.TabBottom">
+      <summary>
+        <para>Displays the tab hint at the bottom.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.TabHeader">
+      <summary>
+        <para>Displays the tab hint in the header area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.TabLeft">
+      <summary>
+        <para>Displays the tab hint at the left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.TabRight">
+      <summary>
+        <para>Displays the tab hint at the right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockHint.TabTop">
+      <summary>
+        <para>Displays the tab hint at the top.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.Docking.DockingDocumentUIService">
       <summary>
         <para>Allows you to show documents in docked <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/>s.</para>
@@ -3076,6 +3469,36 @@ This value matches the value of the panel&#39;s Name property.</param>
     <member name="F:DevExpress.Xpf.Docking.DockingViewStyle.Light">
       <summary>
         <para>Dock layout items merge their borders.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.DockItemState">
+      <summary>
+        <para>Contains values that identify dock states.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockItemState.AutoHidden">
+      <summary>
+        <para>The panel is auto-hidden.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockItemState.Closed">
+      <summary>
+        <para>The panel is closed.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockItemState.Docked">
+      <summary>
+        <para>The panel is docked.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockItemState.Floating">
+      <summary>
+        <para>The panel is floating.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.DockItemState.Undefined">
+      <summary>
+        <para>The panel does not belong to any group.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Xpf.Docking.DockLayoutManager">
@@ -3224,10 +3647,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.AutoHideExpandMode">
       <summary>
-        <para>Gets or sets how an auto-hidden panel is expanded.
-This is a dependency property.</para>
+        <para>Gets or sets how an auto-hidden panel is expanded. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Docking.Base.AutoHideExpandMode"/> value that specifies the way an auto-hidden panel is expanded.</value>
+      <value>The way an auto-hidden panel is expanded.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.DockLayoutManager.AutoHideExpandModeProperty">
       <summary>
@@ -3237,9 +3659,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.AutoHideGroups">
       <summary>
-        <para>Provides access to the collection of <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> objects, containing auto-hidden panels. Allows you to create auto-hidden panels in XAML.</para>
+        <para>A collection of <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> objects.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Docking.AutoHideGroupCollection"/> collection of <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> objects, containing auto-hidden panels.</value>
+      <value>A collection of <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> objects that contains auto-hidden panels.</value>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.AutoHideGroupsCheckInterval">
       <summary>
@@ -3257,7 +3679,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets or sets the mode that specifies how auto-hidden panels are displayed relative to other panels when expanded. This is a dependency property.</para>
       </summary>
-      <value>An DevExpress.Xpf.Docking.Base.AutoHideMode enumeration value that specifies how auto-hidden panels are displayed relative to other panels when expanded. The default is Default.</value>
+      <value>An <see cref="T:DevExpress.Xpf.Docking.Base.AutoHideMode"/> enumeration value that specifies how auto-hidden panels are displayed relative to other panels when expanded.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.DockLayoutManager.AutoHideModeProperty">
       <summary>
@@ -3292,7 +3714,7 @@ This is a dependency property.</para>
       <summary>
         <para>Provides access to closed panels.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Docking.ClosedPanelCollection"/> object that contains closed panels</value>
+      <value>A <see cref="T:DevExpress.Xpf.Docking.ClosedPanelCollection"/> object that contains closed panels.</value>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.ClosedPanelsBarPosition">
       <summary>
@@ -3308,10 +3730,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.ClosedPanelsBarVisibility">
       <summary>
-        <para>Gets or sets the visibility state for the Closed Panels bar.
-This is a dependency property.</para>
+        <para>Gets or sets the visibility state for the Closed Panels bar. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Docking.Base.ClosedPanelsBarVisibility"/> value that specifies the visibility state for the Closed Panels bar.</value>
+      <value>The visibility state for the Closed Panels bar.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.DockLayoutManager.ClosedPanelsBarVisibilityProperty">
       <summary>
@@ -3431,8 +3852,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.DockingStyle">
       <summary>
-        <para>Gets or sets the docking style.
-This is a dependency property.</para>
+        <para>Gets or sets the docking style. This is a dependency property.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Docking.DockingStyle"/> value that is the current docking style.</value>
     </member>
@@ -3751,18 +4171,6 @@ This is a dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
-    <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.IsDarkTheme">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="F:DevExpress.Xpf.Docking.DockLayoutManager.IsDarkThemeProperty">
-      <summary>
-        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.DockLayoutManager.IsDarkTheme"/> dependency property.</para>
-      </summary>
-      <value>A dependency property identifier.</value>
-    </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.IsRenaming">
       <summary>
         <para>Gets whether an item is being renamed.
@@ -4076,8 +4484,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DockLayoutManager.OwnsFloatWindows">
       <summary>
-        <para>Gets or sets whether float windows are automatically minimized/restored along with their parent <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/>.
-This is a dependency property.</para>
+        <para>Gets or sets whether float windows are automatically minimized/restored along with their parent <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/>. This is a dependency property.</para>
       </summary>
       <value>true, if float windows are automatically minimized/restored along with their parent <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/>; otherwise, false.</value>
     </member>
@@ -4397,7 +4804,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Docking.DocumentGroup">
       <summary>
-        <para>Represents child panels (<see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> objects) using either a tabbed or MDI UI.</para>
+        <para>A container for <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> and LayoutPanel objects. The DocumentGroup displays child <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>&#39;s in tabbed or MDI UIs.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Docking.DocumentGroup.#ctor">
@@ -4407,8 +4814,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DocumentGroup.ClosePageButtonShowMode">
       <summary>
-        <para>Gets or sets whether Close buttons are displayed in individual tab pages and the tab container&#39;s header. 
-This is a dependency property.</para>
+        <para>Gets or sets whether Close buttons are displayed in individual tab pages and the tab container&#39;s header. This is a dependency property.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Docking.ClosePageButtonShowMode"/> value that specifies the display mode for Close buttons.</value>
     </member>
@@ -4447,9 +4853,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DocumentGroup.IsDropDownButtonVisible">
       <summary>
-        <para>Gets whether the DropDown button is displayed within the DocumentGroup&#39;s header.</para>
+        <para>Gets whether the drop-down button is displayed within the DocumentGroup&#39;s header.</para>
       </summary>
-      <value>true if the DropDown button is displayed within the DocumentGroup&#39;s header; otherwise, false.</value>
+      <value>true, if the drop-down button is displayed within the DocumentGroup&#39;s header; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DocumentGroup.IsRestoreButtonVisible">
       <summary>
@@ -4460,10 +4866,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DocumentGroup.MDIStyle">
       <summary>
-        <para>Gets or sets how the <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> presents its child panels, as floaing windows, or using the tabbed UI.
-This is a dependency property.</para>
+        <para>Gets or sets how the <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> displays its child panels, as floating windows or as tabs. This is a dependency property.</para>
       </summary>
-      <value>An <see cref="T:DevExpress.Xpf.Docking.MDIStyle"/> value that specifies how the <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> presents its child panels, as floaing windows, or using the tabbed UI.</value>
+      <value>An <see cref="T:DevExpress.Xpf.Docking.MDIStyle"/> value that specifies how the <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> presents its child panels, as floating windows or as tabs.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.DocumentGroup.MDIStyleProperty">
       <summary>
@@ -4478,7 +4883,7 @@ This is a dependency property.</para>
     </member>
     <member name="F:DevExpress.Xpf.Docking.DocumentGroup.PinnedProperty">
       <summary>
-        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.DocumentGroup.Pinned"/> dependency property.</para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.DocumentGroup.Pinned"/> attached property.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Docking.DocumentGroup.SetPinLocation(System.Windows.DependencyObject,DevExpress.Xpf.Layout.Core.TabHeaderPinLocation)">
@@ -4504,9 +4909,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DocumentGroup.ShowDropDownButton">
       <summary>
-        <para>Gets or sets whether the DropDown button is visible within the current DocumentGroup.</para>
+        <para>Gets or sets whether the drop-down button is visible within the current DocumentGroup.</para>
       </summary>
-      <value>true if the DropDown button is visible within the current DocumentGroup; otherwise, false.</value>
+      <value>true if the drop-down button is visible within the current DocumentGroup; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.DocumentGroup.ShowPinButtonProperty">
       <summary>
@@ -4534,7 +4939,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.DocumentGroup.TabbedGroupDisplayMode">
       <summary>
-        <para>Contains values that specify the DocumentPanel header displaying mode.</para>
+        <para>Contains values that specify the DocumentPanel header display mode.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Docking.TabbedGroupDisplayMode"/> enumeration value.</value>
     </member>
@@ -4546,7 +4951,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Docking.DocumentPanel">
       <summary>
-        <para>DocumentPanel objects represent child panels in a <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</para>
+        <para>A child panel in a <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>. The DocumentPanel supports the MDI and Tabbed UIs.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Docking.DocumentPanel.#ctor">
@@ -4604,7 +5009,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets or sets the location of an MDI child panel. This property is in effect when the group&#39;s <see cref="P:DevExpress.Xpf.Docking.DocumentGroup.MDIStyle"/> property is set to MDI. This is an attached property.</para>
       </summary>
-      <value>A Point value that specifies the location of an MDI child panel</value>
+      <value>An MDI child panel location.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.DocumentPanel.MDILocationProperty">
       <summary>
@@ -4759,7 +5164,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets or sets whether the panel is in the normal, maximized or minimized state. This is an attached property.</para>
       </summary>
-      <value>A DevExpress.Xpf.Docking.FloatState enumeration value that specifies whether the panel is in the normal, maximized or minimized state.</value>
+      <value>An enumeration value that specifies whether the panel is in the normal, maximized or minimized state.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.FloatGroup.FloatStateProperty">
       <summary>
@@ -4960,6 +5365,26 @@ This is a dependency property.</para>
         <para>Floating panels are allowed to be dragged only within the current window.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Docking.FloatState">
+      <summary>
+        <para>Contains values that identify dock states.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.FloatState.Maximized">
+      <summary>
+        <para>The panel is maximized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.FloatState.Minimized">
+      <summary>
+        <para>The panel is minimized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.FloatState.Normal">
+      <summary>
+        <para>The panel is normal.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.Docking.GroupBorderStyle">
       <summary>
         <para>Contains values that specify how a group&#39;s borders are rendered.</para>
@@ -4967,12 +5392,12 @@ This is a dependency property.</para>
     </member>
     <member name="F:DevExpress.Xpf.Docking.GroupBorderStyle.Group">
       <summary>
-        <para>A container is displayed with borders and caption.</para>
+        <para>A container is displayed with borders and a caption.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Docking.GroupBorderStyle.GroupBox">
       <summary>
-        <para>A container is displayed with borders and title bar.</para>
+        <para>A container is displayed with borders and a title bar.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Docking.GroupBorderStyle.NoBorder">
@@ -4982,8 +5407,210 @@ This is a dependency property.</para>
     </member>
     <member name="F:DevExpress.Xpf.Docking.GroupBorderStyle.Tabbed">
       <summary>
-        <para>Child items are represented as tabs.</para>
+        <para>Child items are displayed as tabs.</para>
       </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.IDockController">
+      <summary>
+        <para>Provides methods to perform docking operations on groups and panels. DevExpress.Xpf.Docking.DockControllerBase</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddDocumentGroup(DevExpress.Xpf.Layout.Core.DockType)">
+      <summary>
+        <para>Creates a <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>, and docks it to the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container (root group).</para>
+      </summary>
+      <param name="type">A <see cref="T:DevExpress.Xpf.Layout.Core.DockType"/> value that specifies the side of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container where the <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> is docked.</param>
+      <returns>The created  <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddDocumentPanel(DevExpress.Xpf.Docking.DocumentGroup)">
+      <summary>
+        <para>Adds a new <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> to the specified <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</para>
+      </summary>
+      <param name="group">A <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> object to which a new panel is added.</param>
+      <returns>The created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddDocumentPanel(DevExpress.Xpf.Docking.DocumentGroup,System.Uri)">
+      <summary>
+        <para>Adds a new <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> to the specified DocumentGroup and loads the contents of a Window, Page or UserControl defined in the specified XAML into the <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</para>
+      </summary>
+      <param name="group">A <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> object to which a new <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> is added.</param>
+      <param name="uri">The uniform resource identifier (URI) of the XAML that defines a Window, Page or UserControl to be loaded into the created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</param>
+      <returns>The created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddDocumentPanel(System.Windows.Point,System.Windows.Size)">
+      <summary>
+        <para>Adds an empty floating <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</para>
+      </summary>
+      <param name="floatLocation">The top left corner position of the created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</param>
+      <param name="floatSize">The height and width of the created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</param>
+      <returns>The created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddDocumentPanel(System.Windows.Point,System.Windows.Size,System.Uri)">
+      <summary>
+        <para>Adds a new floating <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> and loads the contents of a Window, Page or UserControl defined in the specified XAML into the <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</para>
+      </summary>
+      <param name="floatLocation">The left top corner position of the created DocumentPanel.</param>
+      <param name="floatSize">The height and width of the created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</param>
+      <param name="uri">The uniform resource identifier (URI) of the XAML that defines a Window, Page or UserControl to be loaded into the created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/>.</param>
+      <returns>The created <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddItem(DevExpress.Xpf.Docking.BaseLayoutItem,DevExpress.Xpf.Docking.BaseLayoutItem,DevExpress.Xpf.Layout.Core.DockType)">
+      <summary>
+        <para>Adds a newly created item to the specified target item.</para>
+      </summary>
+      <param name="item">A newly created item to be docked to another item.</param>
+      <param name="target">An item to which to dock.</param>
+      <param name="type">A <see cref="T:DevExpress.Xpf.Layout.Core.DockType"/> value that specifies how an item is docked to another item.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddPanel(DevExpress.Xpf.Layout.Core.DockType)">
+      <summary>
+        <para>Creates a <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> and docks it at the specified side of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container (root group).</para>
+      </summary>
+      <param name="type">A DockType value that specifies the side of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container where the <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> is docked.</param>
+      <returns>The created <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.AddPanel(System.Windows.Point,System.Windows.Size)">
+      <summary>
+        <para>Creates a floating panel with the specified size and displays it at the specified location.</para>
+      </summary>
+      <param name="floatLocation">A Point structure that specifies the position at which the panel is displayed. The position is relative to the top left corner of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container (root group).</param>
+      <param name="floatSize">A Size structure that specifies the created panel&#39;s size.</param>
+      <returns>The created <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Close(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Closes the specified item.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to be closed.</param>
+      <returns>true, if the item is successfully closed; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.CloseAllButThis(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Closes all items except the specified one within this item&#39;s container.</para>
+      </summary>
+      <param name="item">The only <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> element to remain opened within its parent container.</param>
+      <returns>true, if all but the specified items were successfully closed; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.CreateCommand``1(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Creates the specified dock command for the specified item/panel.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> descendant with which the created command is associated.</param>
+      <typeparam name="T"></typeparam>
+      <returns>The created command.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.CreateNewDocumentGroup(DevExpress.Xpf.Docking.DocumentPanel,System.Windows.Controls.Orientation)">
+      <summary>
+        <para>Creates a new <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> and moves the specified <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> to it.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> to be added to the created group.</param>
+      <param name="orientation">A <see cref="T:System.Windows.Controls.Orientation"/> value that specifies whether the created <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> is positioned on the right or bottom of the DocumentPanel&#39;s previous group.</param>
+      <returns>true, if a <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> has been created; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.CreateNewDocumentGroup(DevExpress.Xpf.Docking.LayoutPanel,System.Windows.Controls.Orientation)">
+      <summary>
+        <para>Creates a new <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> and moves the specified <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> to it.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> to be added to the created group.</param>
+      <param name="orientation">A <see cref="T:System.Windows.Controls.Orientation"/> value that specifies whether the created <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> is positioned on the right or bottom of the DocumentPanel&#39;s previous group.</param>
+      <returns>true, if a <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> has been created; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Dock(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Docks the specified item. This method is in effect for newly created, floating, auto-hidden, or closed (hidden) items.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to be docked.</param>
+      <returns>true, if the item has been successfully docked; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Dock(DevExpress.Xpf.Docking.BaseLayoutItem,DevExpress.Xpf.Docking.BaseLayoutItem,DevExpress.Xpf.Layout.Core.DockType)">
+      <summary>
+        <para>Docks the first item to the second item with the specified dock type.</para>
+      </summary>
+      <param name="item">The item to be docked.</param>
+      <param name="target">The item to which the first item is docked.</param>
+      <param name="type">A DockType value that specifies how the first item is docked.</param>
+      <returns>true, if the item has been successfully docked; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Float(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Makes the specified item floating.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object that to be made floating.</param>
+      <returns>A <see cref="T:DevExpress.Xpf.Docking.FloatGroup"/> object that when created, displays the item in the floating state.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Hide(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Enables the auto-hide mode for the item/panel and hides it at a corresponding edge of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to which the auto-hide mode is applied.</param>
+      <returns>true, if the auto-hide mode is enabled for the item/pane; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Hide(DevExpress.Xpf.Docking.BaseLayoutItem,DevExpress.Xpf.Docking.AutoHideGroup)">
+      <summary>
+        <para>Enables the auto-hide functionality for the item/panel and hides it within the specified <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> group.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to which the auto-hide feature is applied.</param>
+      <param name="target">An <see cref="T:DevExpress.Xpf.Docking.AutoHideGroup"/> object where the panel is hidden.</param>
+      <returns>true, if the auto-hide functionality has been enabled for the item/pane; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Hide(DevExpress.Xpf.Docking.BaseLayoutItem,System.Windows.Controls.Dock)">
+      <summary>
+        <para>Enables the auto-hide functionality for the item/panel and hides it at the specified edge of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to which the auto-hide feature is applied.</param>
+      <param name="dock">A <see cref="T:System.Windows.Controls.Dock"/> value that specifies the side of the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> container where the panel is hidden.</param>
+      <returns>true, if the auto-hide functionality has been enabled for the item/pane; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Insert(DevExpress.Xpf.Docking.LayoutGroup,DevExpress.Xpf.Docking.BaseLayoutItem,System.Int32)">
+      <summary>
+        <para>Inserts the specified item into the specified group at a specific position.</para>
+      </summary>
+      <param name="group">A <see cref="T:DevExpress.Xpf.Docking.LayoutGroup"/> into which the specified item is inserted.</param>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to be inserted into the group.</param>
+      <param name="index">An integer value that specifies the position among the group&#39;s children at which the item must be inserted.</param>
+      <returns>true, if the item has been inserted into the group; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.MoveToDocumentGroup(DevExpress.Xpf.Docking.DocumentPanel,System.Boolean)">
+      <summary>
+        <para>Moves the specified <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> to the previous or next <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object to be moved to another <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</param>
+      <param name="next">true to move the panel to the next <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>; false to move the panel to the previous <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</param>
+      <returns>true, if the <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> has been moved to another <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.MoveToDocumentGroup(DevExpress.Xpf.Docking.LayoutPanel,System.Boolean)">
+      <summary>
+        <para>Moves the specified <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> to the previous or next <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> object to be moved to another <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</param>
+      <param name="next">true to move the panel to the next <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>; false to move the panel to the previous <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>.</param>
+      <returns>true, if the <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> has been moved to another <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/>; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.RemoveItem(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Removes the specified item. This member supports the internal infrastructure, and is not intended to be used directly from your code.</para>
+      </summary>
+      <param name="item">An item to be removed.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.RemovePanel(DevExpress.Xpf.Docking.LayoutPanel)">
+      <summary>
+        <para>Removes any connection of the specified panel with the <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/>.</para>
+      </summary>
+      <param name="panel">The <see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> object that is removed from the DockLayoutManager.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Rename(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Starts dock item renaming.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> to be renamed.</param>
+      <returns>true, if item renaming has been initiated; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IDockController.Restore(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Restores a closed (hidden) panel at its previous dock position.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to be restored.</param>
+      <returns>A <see cref="T:System.Boolean"/> value that indicates that the panel has been restored successfully.</returns>
     </member>
     <member name="T:DevExpress.Xpf.Docking.ImageLocation">
       <summary>
@@ -5004,6 +5631,102 @@ This is a dependency property.</para>
       <summary>
         <para>The same as the <see cref="F:DevExpress.Xpf.Docking.ImageLocation.BeforeText"/> option.</para>
       </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.IMDIController">
+      <summary>
+        <para>Provides methods to perform operations on MDI panels.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.ArrangeIcons(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Arranges the icons for minimized windows at the bottom of the main window.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to be arranged.</param>
+      <returns>true, if the item is successfully arranged; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.Cascade(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Displays the item or its children in a cascade.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object to be displayed in a cascade.</param>
+      <returns>true, if the item is successfully displayed in cascade mode; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.ChangeMDIStyle(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Changes the item&#39;s MDIStyle property.</para>
+      </summary>
+      <param name="item">A <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object for which the MDIStyle property should be changed.</param>
+      <returns>true, if the item&#39;s MDIStyle property is successfully changed; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.CreateCommand``1(DevExpress.Xpf.Docking.BaseLayoutItem[])">
+      <summary>
+        <para>Creates the dock command for the specified items.</para>
+      </summary>
+      <param name="items">An array of <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> objects with which the created command is associated.</param>
+      <typeparam name="T"></typeparam>
+      <returns>The created command.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.Maximize(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Maximizes the document.</para>
+      </summary>
+      <param name="document">The <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object that should be maximized.</param>
+      <returns>true, if the document is maximized; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.Maximize(DevExpress.Xpf.Docking.DocumentPanel)">
+      <summary>
+        <para>Maximizes the document.</para>
+      </summary>
+      <param name="document">The <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object that should be maximized.</param>
+      <returns>true, if the document is maximized; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.IMDIController.MDIMenuBar">
+      <summary>
+        <para>Gets the item&#39;s MenuBar when the DocumentGroup&#39;s <see cref="P:DevExpress.Xpf.Docking.DocumentGroup.MDIStyle"/> property is <see cref="F:DevExpress.Xpf.Docking.MDIStyle.MDI"/>.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.Docking.MDIMenuBar"/> object.</value>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.Minimize(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Minimizes the document.</para>
+      </summary>
+      <param name="document">The <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object that should be minimized.</param>
+      <returns>true, if the document is minimized; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.Minimize(DevExpress.Xpf.Docking.DocumentPanel)">
+      <summary>
+        <para>Minimizes the document.</para>
+      </summary>
+      <param name="document">The <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object that should be minimized.</param>
+      <returns>true, if the document is minimized; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.Restore(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Restores the document to its previous state.</para>
+      </summary>
+      <param name="document">The <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object that should be restored.</param>
+      <returns>true, if the document is restored; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.Restore(DevExpress.Xpf.Docking.DocumentPanel)">
+      <summary>
+        <para>Restores the document to its previous state.</para>
+      </summary>
+      <param name="document">The <see cref="T:DevExpress.Xpf.Docking.DocumentPanel"/> object that should be restored.</param>
+      <returns>true, if the document is restored; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.TileHorizontal(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Arranges the item horizontally within the group.</para>
+      </summary>
+      <param name="item">The <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object that should be arranged horizontally.</param>
+      <returns>true, if the item is arranged horizontally; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.IMDIController.TileVertical(DevExpress.Xpf.Docking.BaseLayoutItem)">
+      <summary>
+        <para>Arranges the item vertically within the group.</para>
+      </summary>
+      <param name="item">The <see cref="T:DevExpress.Xpf.Docking.BaseLayoutItem"/> object that should be arranged vertically.</param>
+      <returns>true, if the item is arranged vertically; otherwise, false.</returns>
     </member>
     <member name="T:DevExpress.Xpf.Docking.LabelItem">
       <summary>
@@ -5150,10 +5873,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.LayoutControlItem.Control">
       <summary>
-        <para>Gets or sets the control displayed by the current item.
-This is a dependency property.</para>
+        <para>Gets the control displayed by the current item. This is a dependency property.</para>
       </summary>
-      <value>A UIElement object that specifies the control displayed by the current item.</value>
+      <value>The control displayed by the current item.</value>
     </member>
     <member name="P:DevExpress.Xpf.Docking.LayoutControlItem.ControlHorizontalAlignment">
       <summary>
@@ -5376,7 +6098,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Docking.LayoutGroup">
       <summary>
-        <para>Represents a group of items, arranging them side by side (either horizontally or vertically) or using the tabbed UI (the tabbed UI is only supported when combining layout items).</para>
+        <para>A container for items and groups.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Docking.LayoutGroup.#ctor">
@@ -5481,10 +6203,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.LayoutGroup.AllowSplitters">
       <summary>
-        <para>Gets or sets whether item resizing is enabled for the group&#39;s children.
-This is a dependency property.</para>
+        <para>Gets or sets whether users can resize the LayoutGroup&#39;s child items. This is a dependency property.</para>
       </summary>
-      <value>A Nullable Boolean value that specifies whether item resizing is enabled.</value>
+      <value>true, to allow users to resize the LayoutGroup&#39;s child items; false, to restrict users from resizing the LayoutGroup&#39;s child items; null, to allow users to resize the LayoutGroup&#39;s child items only when Customization Mode is enabled.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.LayoutGroup.AllowSplittersProperty">
       <summary>
@@ -5615,8 +6336,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.LayoutGroup.GroupBorderStyle">
       <summary>
-        <para>Gets or sets the group&#39;s border style. This option is in effect when the LayoutGroup is used to combine layout items, rather than dock items.
-This is a dependency property.</para>
+        <para>Gets or sets the group&#39;s border style. This option is in effect when the LayoutGroup is used to combine layout items. This is a dependency property.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Docking.GroupBorderStyle"/> value that specifies the group&#39;s border style.</value>
     </member>
@@ -5950,10 +6670,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.LayoutGroup.Orientation">
       <summary>
-        <para>Gets or sets whether child items are arranged horizontally or vertically within the group.
-This is a dependency property.</para>
+        <para>Gets or sets the child item&#39;s orientation within the group (horizontal or vertical). This is a dependency property.</para>
       </summary>
-      <value>An <see cref="T:System.Windows.Controls.Orientation"/> value that specifies whether child items are arranged horizontally or vertically within the group.</value>
+      <value>The child item&#39;s orientation within the group.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.LayoutGroup.OrientationProperty">
       <summary>
@@ -6006,10 +6725,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.LayoutGroup.SelectedTabIndex">
       <summary>
-        <para>Gets or sets the index of the active child item. This property is supported for groups representing its children as tabs.
-This is a dependency property.</para>
+        <para>Gets or sets the index of the active child item. This property is supported for groups that display its children as tabs. This is a dependency property.</para>
       </summary>
-      <value>An integer value that represents the index of the active tab.</value>
+      <value>The index of the active tab.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.LayoutGroup.SelectedTabIndexProperty">
       <summary>
@@ -6063,7 +6781,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets or sets whether tab contents are cached all at once when the group is displayed, each tab content is cached when the tab is selected, or tab contents are not cached. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Core.TabContentCacheMode"/> enumeration value that specifies how tab contents are cached. The default is None.</value>
+      <value>A <see cref="T:DevExpress.Xpf.Core.TabContentCacheMode"/> enumeration value that specifies how tab contents are cached.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.LayoutGroup.TabContentCacheModeProperty">
       <summary>
@@ -6111,8 +6829,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Docking.LayoutGroup.TabHeaderLayoutType">
       <summary>
-        <para>Gets or sets how the LayoutGroup displays the tab headers corresponding to the group&#39;s child items. This property is in effect if the current group represents child items as tabs.
-This is a dependency property.</para>
+        <para>Gets or sets how the LayoutGroup displays the tab headers corresponding to the group&#39;s child items. This property is in effect if the current group displays child items as tabs. This is a dependency property.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Layout.Core.TabHeaderLayoutType"/> value that specifies how the LayoutGroup displays the tab headers corresponding to the group&#39;s child items.</value>
     </member>
@@ -6205,7 +6922,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Docking.LayoutPanel">
       <summary>
-        <para>Represents a dock panel.</para>
+        <para>A dock panel. You can use a LayoutPanel in dock and layout UIs.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Docking.LayoutPanel.#ctor">
@@ -6253,7 +6970,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets or sets whether the current auto-hidden panel is hidden, visible or expanded. This is a dependency property.</para>
       </summary>
-      <value>An DevExpress.Xpf.Docking.Base.AutoHideExpandState enumeration value that specifies whether the current auto-hidden panel is hidden, visible or expanded.</value>
+      <value>An <see cref="T:DevExpress.Xpf.Docking.Base.AutoHideExpandState"/> enumeration value that specifies whether the current auto-hidden panel is hidden, visible or expanded.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.LayoutPanel.AutoHideExpandStateProperty">
       <summary>
@@ -6291,7 +7008,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets whether the panel is docked, auto-hidden, floating, or closed. This is a dependency property.</para>
       </summary>
-      <value>A DevExpress.Xpf.Docking.DockItemState enumeration value that specifies whether the panel is docked, auto-hidden, floating, or closed.</value>
+      <value>A <see cref="T:DevExpress.Xpf.Docking.DockItemState"/> enumeration value that specifies whether the panel is docked, auto-hidden, floating, or closed.</value>
     </member>
     <member name="F:DevExpress.Xpf.Docking.LayoutPanel.DockItemStateProperty">
       <summary>
@@ -6598,6 +7315,159 @@ This is a dependency property.</para>
         <para>The <see cref="T:DevExpress.Xpf.Docking.DockLayoutManager"/> stores its layout panels as logical children.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Docking.MDIControllerCommand">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.ArrangeIcons">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.Cascade">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.ChangeMDIStyle">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.Maximize">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.Minimize">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.Restore">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.TileHorizontal">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIControllerCommand.TileVertical">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.MDIMenuBar">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.MDIMenuBar.#ctor(DevExpress.Xpf.Docking.DockLayoutManager,DevExpress.Xpf.Bars.BarManager)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Docking.MDIMenuBar"/> class with specified settings.</para>
+      </summary>
+      <param name="manager"></param>
+      <param name="mdiBarManager"></param>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.MDIMenuBar.GetBarItem(DevExpress.Xpf.Docking.MDIMenuBar.ItemType)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="type"></param>
+      <returns></returns>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.MDIMenuBar.ItemType">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.MDIMenuBar.ItemType.Close">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.MDIMenuBar.ItemType.Minimize">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.MDIMenuBar.ItemType.Restore">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.Docking.MDIMenuBar.MDIButtonSettings">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIMenuBar.MDIButtonSettings.Command">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIMenuBar.MDIButtonSettings.Content">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.MDIMenuBar.MDIButtonSettings.GetSettings(DevExpress.Xpf.Docking.MDIMenuBar.ItemType)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="type"></param>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIMenuBar.MDIButtonSettings.Hint">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIMenuBar.MDIButtonSettings.IsVisibleBindingPath">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Docking.MDIMenuBar.MDIButtonSettings.KeyGesture">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.MDIMenuBar.MDIMenuBarCategory">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.MDIMenuBar.MDIMenuBarItemPrefix">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.Xpf.Docking.MDIMenuBar.UpdateMDIButtonBorderStyle(DevExpress.Xpf.Docking.DockLayoutManager,System.Windows.Style)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="manager"></param>
+      <param name="style"></param>
+    </member>
     <member name="T:DevExpress.Xpf.Docking.MDIState">
       <summary>
         <para>Enumerates available states for panels in a <see cref="T:DevExpress.Xpf.Docking.DocumentGroup"/> in MDI mode.</para>
@@ -6630,12 +7500,12 @@ This is a dependency property.</para>
     </member>
     <member name="F:DevExpress.Xpf.Docking.MDIStyle.MDI">
       <summary>
-        <para>A DocumentGroup&#39;s children are represented as floating windows, that can float within the DocumentGroup&#39;s boundaries.</para>
+        <para>A DocumentGroup&#39;s children are displayed as floating windows that can float within the DocumentGroup&#39;s boundaries.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Docking.MDIStyle.Tabbed">
       <summary>
-        <para>A DocumentGroup is rendered as a tab container, where children are represented as tabs.</para>
+        <para>A DocumentGroup is rendered as a tab container, where children are displayed as tabs.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Xpf.Docking.RestoreLayoutOptions">
@@ -6908,7 +7778,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Docking.TabbedGroup">
       <summary>
-        <para>Represents a tabbed group of dock panels (<see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> objects).</para>
+        <para>A tabbed group of dock panels (<see cref="T:DevExpress.Xpf.Docking.LayoutPanel"/> objects).</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Docking.TabbedGroup.#ctor">

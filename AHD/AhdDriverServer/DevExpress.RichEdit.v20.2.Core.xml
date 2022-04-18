@@ -32,6 +32,14 @@
       <param name="brickOwner">An object that implements the DevExpress.XtraPrinting.IBrickOwner interface.</param>
       <param name="style">An object that specifies the report drawing style.</param>
     </member>
+    <member name="M:DevExpress.XtraPrinting.RichTextBrick.#ctor(DevExpress.XtraPrinting.IBrickOwner,DevExpress.XtraPrinting.BrickStyle,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPrinting.RichTextBrick"/> class with specified settings.</para>
+      </summary>
+      <param name="brickOwner">An object that implements the DevExpress.XtraPrinting.IBrickOwner interface.</param>
+      <param name="style">An object that specifies the report drawing style.</param>
+      <param name="rtfText"></param>
+    </member>
     <member name="P:DevExpress.XtraPrinting.RichTextBrick.BaseFont">
       <summary>
         <para>For internal use.</para>
@@ -3981,6 +3989,12 @@
       </summary>
       <value>True, if the line containing such a hyphenated word is displayed on the following page or column; otherwise, false.</value>
     </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.CompatibilitySettings.VerticallyAlignTableCellsWithShapes">
+      <summary>
+        <para>Gets or sets whether to vertically align table cells that contain shapes.</para>
+      </summary>
+      <value>true to vertically align table cells with shapes; otherwise, false.</value>
+    </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ConditionalTableStyleFormattingTypes">
       <summary>
         <para>Lists table elements to which a style should be applied.</para>
@@ -4426,6 +4440,30 @@
       </summary>
       <value>true if the document contains only default content; otherwise, false.</value>
     </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.Document.LoadDocument(System.Byte[])">
+      <summary>
+        <para>Loads a document from a byte array. The file format is determined based on document content.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.Document.LoadDocument(System.Byte[],DevExpress.XtraRichEdit.DocumentFormat)">
+      <summary>
+        <para>Loads a document in the specified format from a byte array.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <param name="format">An enumeration member that specifies the format of the loaded document.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.Document.LoadDocument(System.Byte[],DevExpress.XtraRichEdit.DocumentFormat,System.String)">
+      <summary>
+        <para>Loads a document in the specified format from a byte array. You can use this method to load HTML documents with connected files.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <param name="format">An enumeration member that specifies the format of the loaded document.</param>
+      <param name="sourceUri">The document&#39;s URI. You can use this parameter to load files associated with an HTML document.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
+    </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.Document.LoadDocument(System.IO.Stream)">
       <summary>
         <para>Loads a document from the stream.</para>
@@ -4605,6 +4643,21 @@
         <para>Gets or sets the formatted text content of the document.</para>
       </summary>
       <value>A string, containing the document&#39;s content in rich text format.</value>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.Document.SaveDocument(DevExpress.XtraRichEdit.DocumentFormat)">
+      <summary>
+        <para>Saves the document to a byte array in the specified file format.</para>
+      </summary>
+      <param name="format">An enumeration member that specifies the output document format.</param>
+      <returns>A byte array that contains data in the specified format.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.Document.SaveDocument(DevExpress.XtraRichEdit.DocumentFormat,DevExpress.XtraRichEdit.API.Native.EncryptionSettings)">
+      <summary>
+        <para>Saves the document to a byte array in the specified file format and encrypts it with a password.</para>
+      </summary>
+      <param name="format">An enumeration member that specifies the output document format.</param>
+      <param name="encryptionSettings">Specifies encryption settings.</param>
+      <returns>A byte array that contains encrypted data in the specified format.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.Document.SaveDocument(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
       <summary>
@@ -5738,13 +5791,13 @@
       <summary>
         <para>Specifies an application used to modify the document.</para>
       </summary>
-      <value>The application name. The default is &quot;DevExpress Office File API/<span id="macro" data-macro-template="xx.x.x">20.2.3</span>.0&quot;.</value>
+      <value>The application name. The default is &quot;DevExpress Office File API/<span class="macro" data-macro-template="xx.x.x">20.2.5</span>.0&quot;.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.AppVersion">
       <summary>
         <para>Gets or sets the version of an application used to modify the document.</para>
       </summary>
-      <value>The application version. The default is <span id="macro" data-macro-template="xx.x">20.2</span></value>
+      <value>The application version. The default is <span class="macro" data-macro-template="xx.x">20.2</span></value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Author">
       <summary>
@@ -5879,7 +5932,7 @@ Presentation, and so on.</para>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.DocumentProtectionType.FillInForms">
       <summary>
-        <para>Allows users to fill in forms and from fields.</para>
+        <para>Allows users to fill in forms and form fields.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.DocumentProtectionType.None">
@@ -6487,9 +6540,9 @@ Presentation, and so on.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.OleFormat">
       <summary>
-        <para></para>
+        <para>Returns the OLE object&#39;s characteristics.</para>
       </summary>
-      <value></value>
+      <value>An object that contains OLE object settings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.OriginalSize">
       <summary>
@@ -8188,235 +8241,235 @@ Supported in Microsoft Word 2007 and higher.</para>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.IO.Stream,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.IO.Stream,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.IO.Stream,System.String,System.Drawing.Image,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.IO.Stream,System.String,System.Drawing.Image,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="presentation"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="presentation"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,System.Drawing.Image,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="presentation"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,System.Drawing.Image,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="presentation"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,System.String,System.Drawing.Image,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObject(System.String,System.String,System.Drawing.Image,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.IO.Stream,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.IO.Stream,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.IO.Stream,System.String,System.Drawing.Image,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.IO.Stream,System.String,System.Drawing.Image,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds an embedded OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="icon"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="icon"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,System.Drawing.Image,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="icon"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,System.Drawing.Image,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="icon"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,System.String,System.Drawing.Image,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <param name="location">An object that defines the object&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddOleObjectAsIcon(System.String,System.String,System.Drawing.Image,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a linked OLE object to a shape group or a drawing canvas. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <param name="bounds">An object that defines the object&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies measurement units.</param>
+      <returns>The OLE object in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddPicture(DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
@@ -9024,76 +9077,291 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.OleFormat">
       <summary>
-        <para></para>
+        <para>Contains OLE object characteristics.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.OleFormat.AutoUpdate">
       <summary>
-        <para></para>
+        <para>Returns or specifies whether the OLE object&#39;s link is automatically updated when the document is opened in Microsoft&#174; Word&#174;.</para>
       </summary>
-      <value></value>
+      <value>true to update the linked OLE object automatically; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.OleFormat.ChangeRepresentation(DevExpress.XtraRichEdit.API.Native.OleObjectRepresentationType,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Changes the display style for the OLE object.</para>
       </summary>
-      <param name="drawAspect"></param>
-      <param name="presentation"></param>
+      <param name="drawAspect">An enumeration member that specifies how the OLE object should be displayed in the document (as an image or an icon).</param>
+      <param name="presentation">An object used to load a new image or icon for the OLE object.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.OleFormat.ChangeRepresentation(DevExpress.XtraRichEdit.API.Native.OleObjectRepresentationType,System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Changes the display style for the OLE object.</para>
       </summary>
-      <param name="drawAspect"></param>
-      <param name="presentation"></param>
+      <param name="drawAspect">An enumeration member that specifies how the OLE object should be displayed in the document (as an image or an icon).</param>
+      <param name="presentation">A new image or icon for the OLE object.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.OleFormat.GetRawData">
       <summary>
-        <para></para>
+        <para>Returns the embedded OLE object&#39;s raw data.</para>
       </summary>
-      <returns></returns>
+      <returns>A byte array that contains extracted data. Null (Nothing in Visual Basic) for a linked OLE object.</returns>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.OleFormat.InsertType">
       <summary>
-        <para></para>
+        <para>Indicates whether the OLE object is embedded in the document or linked to a file.</para>
       </summary>
-      <value></value>
+      <value>An enumeration member that specifies how the OLE object is inserted into the document.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.OleFormat.IsLocked">
       <summary>
-        <para></para>
+        <para>Returns or specifies whether a linked OLE object can be updated.</para>
       </summary>
-      <value></value>
+      <value>true if the linked object can be updated; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.OleFormat.ObjectRepresentation">
       <summary>
-        <para></para>
+        <para>Indicates how the OLE object is displayed in the document (as an image or an icon).</para>
       </summary>
-      <value></value>
+      <value>An enumeration member that defines the OLE object&#39;s display style.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.OleFormat.ProgId">
       <summary>
-        <para></para>
+        <para>Returns the content type associated with the OLE object.</para>
       </summary>
-      <value></value>
+      <value>A string that defines the OLE object&#39;s content type.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.OleFormat.SaveAs(System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Saves data of the embedded OLE object to a stream.</para>
       </summary>
-      <param name="stream"></param>
+      <param name="stream">The output stream.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.OleFormat.SaveAs(System.String)">
       <summary>
-        <para></para>
+        <para>Saves data of the embedded OLE object to a file.</para>
       </summary>
-      <param name="fileName"></param>
+      <param name="fileName">Specifies the file path to save the document.</param>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.OleFormat.SourceFileName">
       <summary>
-        <para></para>
+        <para>Returns the path to the source file associated with the linked OLE object.</para>
       </summary>
-      <value></value>
+      <value>The path to the source file. An empty string for an embedded OLE object.</value>
+    </member>
+    <member name="T:DevExpress.XtraRichEdit.API.Native.OleInsertType">
+      <summary>
+        <para>Lists values that specify how an OLE object is inserted into the document.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleInsertType.Embedded">
+      <summary>
+        <para>The OLE object&#39;s data is embedded in the document.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleInsertType.Linked">
+      <summary>
+        <para>The OLE object is linked to a file.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraRichEdit.API.Native.OleObjectRepresentationType">
+      <summary>
+        <para>Lists values that specify how an OLE object is displayed in the document.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectRepresentationType.Content">
+      <summary>
+        <para>The OLE object is displayed as an image.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectRepresentationType.Icon">
+      <summary>
+        <para>The OLE object is displayed as an icon.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraRichEdit.API.Native.OleObjectType">
+      <summary>
+        <para>Contains strings used to specify content types for OLE objects.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.AdobeAcrobatDocument">
+      <summary>
+        <para>Adobe Acrobat Document.</para>
+      </summary>
+      <value>&quot;AcroExch.Document.DC&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.BitmapImage">
+      <summary>
+        <para>Bitmap Image.</para>
+      </summary>
+      <value>&quot;PBrush&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.Excel97_2003Worksheet">
+      <summary>
+        <para>Microsoft Excel 97-2003 Worksheet.</para>
+      </summary>
+      <value>&quot;Excel.Sheet.8&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.ExcelBinaryWorksheet">
+      <summary>
+        <para>Microsoft Excel Binary Worksheet.</para>
+      </summary>
+      <value>&quot;Excel.SheetBinaryMacroEnabled.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.ExcelChart">
+      <summary>
+        <para>Microsoft Excel Chart.</para>
+      </summary>
+      <value>&quot;Excel.Chart.8&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.ExcelMacroEnabledWorksheet">
+      <summary>
+        <para>Microsoft Excel Macro-Enabled Worksheet.</para>
+      </summary>
+      <value>&quot;Excel.SheetMacroEnabled.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.ExcelWorksheet">
+      <summary>
+        <para>Microsoft Excel Worksheet.</para>
+      </summary>
+      <value>&quot;Excel.Sheet.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.MathTypeEquation">
+      <summary>
+        <para>MathType Equation.</para>
+      </summary>
+      <value>&quot;Equation.DSMT4&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.MicrosoftEquation">
+      <summary>
+        <para>Microsoft Equation 3.0.</para>
+      </summary>
+      <value>&quot;Equation.3&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.MicrosoftGraphChart">
+      <summary>
+        <para>Microsoft Graph Chart.</para>
+      </summary>
+      <value>&quot;MSGraph.Chart.8&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.MicrosoftPhotoEditor">
+      <summary>
+        <para>Microsoft Photo Editor 3.0 Picture.</para>
+      </summary>
+      <value>&quot;MSPhotoEd.3&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.MicrosoftProjectDocument">
+      <summary>
+        <para>Microsoft Project Document.</para>
+      </summary>
+      <value>&quot;MSProject.Project.9&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.OpenDocumentPresentation">
+      <summary>
+        <para>OpenDocument Presentation.</para>
+      </summary>
+      <value>&quot;PowerPoint.OpenDocumentPresentation.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.OpenDocumentSpreadsheet">
+      <summary>
+        <para>OpenDocument Spreadsheet.</para>
+      </summary>
+      <value>&quot;Excel.OpenDocumentSpreadsheet.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.OpenDocumentText">
+      <summary>
+        <para>OpenDocument Text.</para>
+      </summary>
+      <value>&quot;Word.OpenDocumentText.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.OrgChartAddIn">
+      <summary>
+        <para>Organization Chart Add-in for Microsoft Office Programs.</para>
+      </summary>
+      <value>&quot;OrgPlusWOPX.4&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.Package">
+      <summary>
+        <para>Package.</para>
+      </summary>
+      <value>&quot;Package&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.PowerPoint97_2003Presentation">
+      <summary>
+        <para>Microsoft PowerPoint 97-2003 Presentation.</para>
+      </summary>
+      <value>&quot;PowerPoint.Show.8&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.PowerPoint97_2003Slide">
+      <summary>
+        <para>Microsoft PowerPoint 97-2003 Slide.</para>
+      </summary>
+      <value>&quot;PowerPoint.Slide.8&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.PowerPointMacroEnabledPresentation">
+      <summary>
+        <para>Microsoft PowerPoint Macro-Enabled Presentation.</para>
+      </summary>
+      <value>&quot;PowerPoint.ShowMacroEnabled.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.PowerPointMacroEnabledSlide">
+      <summary>
+        <para>Microsoft PowerPoint Macro-Enabled Slide.</para>
+      </summary>
+      <value>&quot;PowerPoint.SlideMacroEnabled.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.PowerPointPresentation">
+      <summary>
+        <para>Microsoft PowerPoint Presentation.</para>
+      </summary>
+      <value>&quot;PowerPoint.Show.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.PowerPointSlide">
+      <summary>
+        <para>Microsoft PowerPoint Slide.</para>
+      </summary>
+      <value>&quot;PowerPoint.Slide.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.Visio2003_2010Drawing">
+      <summary>
+        <para>Microsoft Visio 2003-2010 Drawing.</para>
+      </summary>
+      <value>&quot;Visio.Drawing.11&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.VisioDrawing">
+      <summary>
+        <para>Microsoft Visio Drawing.</para>
+      </summary>
+      <value>&quot;Visio.Drawing.15&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.VisioMacroEnabledDrawing">
+      <summary>
+        <para>Microsoft Visio Macro-Enabled Drawing.</para>
+      </summary>
+      <value>&quot;Visio.DrawingMacroEnabled.15&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.Word97_2003Document">
+      <summary>
+        <para>Microsoft Word 97-2003 Document.</para>
+      </summary>
+      <value>&quot;Word.Document.8&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.WordDocument">
+      <summary>
+        <para>Microsoft Word Document.</para>
+      </summary>
+      <value>&quot;Word.Document.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.WordMacroEnabledDocument">
+      <summary>
+        <para>Microsoft Word Macro-Enabled Document.</para>
+      </summary>
+      <value>&quot;Word.DocumentMacroEnabled.12&quot;</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.OleObjectType.WordPadDocument">
+      <summary>
+        <para>WordPad Document.</para>
+      </summary>
+      <value>&quot;WordPad.Document.1&quot;</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.OpenOfficeHyphenationDictionary">
       <summary>
@@ -10444,13 +10712,13 @@ Example: I, II, III</para>
       <summary>
         <para>Gets the name of the application used to modify the document.</para>
       </summary>
-      <value>The application&#39;s name. The default is &quot;DevExpress Office File API/<span id="macro" data-macro-template="xx.x.x">20.2.3</span>.0&quot;.</value>
+      <value>The application&#39;s name. The default is &quot;DevExpress Office File API/<span class="macro" data-macro-template="xx.x.x">20.2.5</span>.0&quot;.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ReadOnlyDocumentBuiltInProperties.AppVersion">
       <summary>
         <para>Gets the version of the application used to modify the document.</para>
       </summary>
-      <value>The application&#39;s version. The default is <span id="macro" data-macro-template="xx.x">20.2</span></value>
+      <value>The application&#39;s version. The default is <span class="macro" data-macro-template="xx.x">20.2</span></value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ReadOnlyDocumentBuiltInProperties.Author">
       <summary>
@@ -12503,7 +12771,7 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeCollection">
       <summary>
-        <para>A collection of drawing objects (shapes, pictures, and text boxes).</para>
+        <para>A collection of drawing objects (shapes, pictures, text boxes, and OLE objects).</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.Clear">
@@ -12558,119 +12826,119 @@ Example: I, II, III</para>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObject(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.IO.Stream,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that stores data from the specified file. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObject(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.IO.Stream,System.String,System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that stores data from the specified file. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObject(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="presentation"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObject(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="presentation"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObject(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The source for the image that displays OLE object content.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObject(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,System.String,System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an image.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="presentation"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="presentation">The image that displays OLE object content.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObjectAsIcon(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.IO.Stream,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that stores data from the specified file. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObjectAsIcon(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.IO.Stream,System.String,System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that stores data from the specified file. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="stream"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="stream">A stream that contains data to embed in the document.</param>
+      <param name="progId">Embedded content type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObjectAsIcon(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="icon"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObjectAsIcon(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="icon"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObjectAsIcon(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,System.String,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">An object used to load the icon for the OLE object.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertOleObjectAsIcon(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.String,System.String,System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Inserts an OLE object that contains a link to the specified file. The object is displayed in the document as an icon.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="fileName"></param>
-      <param name="progId"></param>
-      <param name="icon"></param>
-      <returns></returns>
+      <param name="pos">The position of the object&#39;s anchor.</param>
+      <param name="fileName">A path to the file associated with the OLE object.</param>
+      <param name="progId">The file type. You can use constant fields of the <see cref="T:DevExpress.XtraRichEdit.API.Native.OleObjectType"/> class to set this value.</param>
+      <param name="icon">The icon for the OLE object.</param>
+      <returns>The OLE object added to the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertPicture(DevExpress.XtraRichEdit.API.Native.DocumentPosition,DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
@@ -14102,7 +14370,7 @@ Example: I, II, III</para>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeType.OleObject">
       <summary>
-        <para></para>
+        <para>An OLE object.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeType.Picture">
@@ -24595,6 +24863,12 @@ Example: I, II, III</para>
       </summary>
       <value>A command ID.</value>
     </member>
+    <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.InsertObject">
+      <summary>
+        <para>InsertObjectCommand ID.</para>
+      </summary>
+      <value>A command ID.</value>
+    </member>
     <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.InsertPageBreak">
       <summary>
         <para><see cref="T:DevExpress.XtraRichEdit.Commands.InsertPageBreakCommand"/> ID.</para>
@@ -25592,6 +25866,12 @@ Example: I, II, III</para>
     <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.ShowInsertMergeFieldForm">
       <summary>
         <para><see cref="T:DevExpress.XtraRichEdit.Commands.ShowInsertMergeFieldFormCommand"/> ID.</para>
+      </summary>
+      <value>A command ID.</value>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.Commands.RichEditCommandId.ShowInsertObjectForm">
+      <summary>
+        <para>ShowOleObjectFormCommand ID.</para>
       </summary>
       <value>A command ID.</value>
     </member>
@@ -32266,21 +32546,33 @@ Example: I, II, III</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.DataFormatOptions.AllowHtml">
       <summary>
-        <para>Gets or sets whether the copied document range is available for pasting in HTML format.</para>
+        <para>Gets or sets whether to copy or paste HTML content.</para>
       </summary>
-      <value>True, to allow HTML format for the content copied to the Clipboard; otherwise, false.</value>
+      <value>True, to allow copying or pasting HTML content; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.DataFormatOptions.AllowImage">
+      <summary>
+        <para>Gets or sets whether to copy or paste images.</para>
+      </summary>
+      <value>true to allow copying or pasting images; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.DataFormatOptions.AllowMetafile">
+      <summary>
+        <para>Gets or sets whether to copy or paste metafiles.</para>
+      </summary>
+      <value>true to allow copying or pasting metafiles; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.DataFormatOptions.AllowPlainText">
       <summary>
-        <para>Gets or sets whether to place plain text data in the Clipboard.</para>
+        <para>Gets or sets whether to copy or paste plain text data.</para>
       </summary>
-      <value>True to allow pasting plain text content; otherwise, false.</value>
+      <value>True to allow copying or pasting plain text content; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.DataFormatOptions.AllowRtf">
       <summary>
-        <para>Gets or sets whether to place RTF content in the Clipboard.</para>
+        <para>Gets or sets whether to copy or paste RTF content.</para>
       </summary>
-      <value>True to allow pasting RTF content; otherwise, false.</value>
+      <value>true to allow copying or pasting RTF content; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.DataFormatOptions.HtmlImagePath">
       <summary>
@@ -32497,6 +32789,18 @@ Example: I, II, III</para>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraRichEdit.DocumentCapabilitiesOptions"/> class with the default settings.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.DocumentCapabilitiesOptions.ActiveX">
+      <summary>
+        <para>Gets or sets whether ActiveX controls are available.</para>
+      </summary>
+      <value>An enumeration member that specifies feature availability.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.DocumentCapabilitiesOptions.ActiveXAllowed">
+      <summary>
+        <para>Gets whether ActiveX controls are allowed in the document.</para>
+      </summary>
+      <value>true if the feature is allowed; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.DocumentCapabilitiesOptions.Assign(DevExpress.Utils.Controls.BaseOptions)">
       <summary>
@@ -34497,6 +34801,46 @@ Example: I, II, III</para>
         <para>Document fields are not visually recognized.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.XtraRichEdit.FontSubstitutionOptions">
+      <summary>
+        <para>Contains font substitution options.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.FontSubstitutionOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraRichEdit.FontSubstitutionOptions"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.FontSubstitutionOptions.Ascii">
+      <summary>
+        <para>Gets or sets the ASCII font used for substitution.</para>
+      </summary>
+      <value>The substitution font name.</value>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.FontSubstitutionOptions.Assign(DevExpress.Utils.Controls.BaseOptions)">
+      <summary>
+        <para>Copies all settings from the object passed as the parameter to the current object.</para>
+      </summary>
+      <param name="options">A FontSubstitutionOptions object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.FontSubstitutionOptions.ComplexScript">
+      <summary>
+        <para>Gets or sets the Complex Script font used for substitution.</para>
+      </summary>
+      <value>The substitution font name.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.FontSubstitutionOptions.EastAsia">
+      <summary>
+        <para>Gets or sets the East Asian Unicode font used for substitution.</para>
+      </summary>
+      <value>The substitution font name.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.FontSubstitutionOptions.HighAnsi">
+      <summary>
+        <para>Gets or sets the High Ansi font name used for substitution.</para>
+      </summary>
+      <value>The substitution font name.</value>
+    </member>
     <member name="T:DevExpress.XtraRichEdit.FormattingMarkVisibilityOptions">
       <summary>
         <para>Contains settings specifying which formatting marks (paragraph marks, spaces, tabs etc.) are visible.</para>
@@ -35033,11 +35377,23 @@ Example: I, II, III</para>
       </summary>
       <value>true to import floating objects as inline elements; otherwise false.</value>
     </member>
+    <member name="P:DevExpress.XtraRichEdit.Import.HtmlDocumentImporterOptions.IgnoreMediaQueries">
+      <summary>
+        <para>Gets or sets whether to ignore media rules on HTML import.</para>
+      </summary>
+      <value>true, to ignore media rules; otherwise, false.</value>
+    </member>
     <member name="P:DevExpress.XtraRichEdit.Import.HtmlDocumentImporterOptions.IgnoreMetaCharset">
       <summary>
         <para>Gets or sets whether the character encoding specified in the META element should be ignored.</para>
       </summary>
       <value>true to ignore character encoding in the META element; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.Import.HtmlDocumentImporterOptions.ImageScalingDpi">
+      <summary>
+        <para>Gets or sets the DPI value used to scale images on high DPI settings.</para>
+      </summary>
+      <value>The DPI setting used to render images.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.Import.HtmlDocumentImporterOptions.ReplaceSpaceWithNonBreakingSpaceInsidePre">
       <summary>
@@ -35637,6 +35993,11 @@ Example: I, II, III</para>
       <param name="callback"></param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.IRichEditControl.ShowInsertMergeFieldForm">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.IRichEditControl.ShowInsertObjectForm">
       <summary>
         <para>For internal use.</para>
       </summary>
@@ -36319,6 +36680,21 @@ Example: I, II, III</para>
       <summary>
         <para>For internal use.</para>
       </summary>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.IRichEditDocumentServer.SaveDocument(DevExpress.XtraRichEdit.DocumentFormat)">
+      <summary>
+        <para>Saves the document to a byte array in the specified file format.</para>
+      </summary>
+      <param name="documentFormat">An enumeration member that specifies the output document format.</param>
+      <returns>A byte array that contains data in the specified format.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.IRichEditDocumentServer.SaveDocument(DevExpress.XtraRichEdit.DocumentFormat,DevExpress.XtraRichEdit.API.Native.EncryptionSettings)">
+      <summary>
+        <para>Saves the document to a byte array in the specified file format and encrypts it with a password.</para>
+      </summary>
+      <param name="documentFormat">An enumeration member that specifies the output document format.</param>
+      <param name="encryptionSettings">Specifies encryption settings.</param>
+      <returns>A byte array that contains encrypted data in the specified format.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.IRichEditDocumentServer.SaveDocument(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
       <summary>
@@ -37192,6 +37568,12 @@ Example: I, II, III</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraRichEdit.RichEditBaseValueSource"/> enumeration member, specifying the font settings&#39; provider.</value>
     </member>
+    <member name="P:DevExpress.XtraRichEdit.RichEditBehaviorOptions.FontSubstitution">
+      <summary>
+        <para>Retrieves font substitution options.</para>
+      </summary>
+      <value>The object that contains font substitution options.</value>
+    </member>
     <member name="P:DevExpress.XtraRichEdit.RichEditBehaviorOptions.ForeColorSource">
       <summary>
         <para>Specifies the color settings applied to the default font of a RichEdit control.</para>
@@ -37430,7 +37812,7 @@ Example: I, II, III</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.RichEditControlCompatibility.EnableLegacyPdfExport">
       <summary>
-        <para>Allows you to use obsolete PDF export implemented in earlier versions. <span data-platform="netstandard">Not supported in .NET Standard 2.0+ / .NET Core 2.1+.</span></para>
+        <para>Allows you to use obsolete PDF export implemented in earlier versions.</para>
       </summary>
       <value>true to use PDF export based on the Printing System functionality; otherwise, false.</value>
     </member>
@@ -38074,6 +38456,30 @@ Example: I, II, III</para>
       </summary>
       <value>One of the <see cref="T:DevExpress.XtraRichEdit.DocumentLayoutUnit"/> enumeration values.</value>
     </member>
+    <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.LoadDocument(System.Byte[])">
+      <summary>
+        <para>Loads a document from a byte array. The file format is determined based on document content.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.LoadDocument(System.Byte[],DevExpress.XtraRichEdit.DocumentFormat)">
+      <summary>
+        <para>Loads a document in the specified format from a byte array.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <param name="format">An enumeration member that specifies the format of the loaded document.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.LoadDocument(System.Byte[],DevExpress.XtraRichEdit.DocumentFormat,System.String)">
+      <summary>
+        <para>Loads a document in the specified format from a byte array. You can use this method to load HTML documents with connected files.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <param name="format">An enumeration member that specifies the format of the loaded document.</param>
+      <param name="sourceUri">The document&#39;s URI. You can use this parameter to load files associated with an HTML document.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
+    </member>
     <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.LoadDocument(System.IO.Stream)">
       <summary>
         <para>Loads a document from the stream.</para>
@@ -38121,6 +38527,21 @@ Example: I, II, III</para>
       <param name="documentFormat">One of the <see cref="T:DevExpress.XtraRichEdit.DocumentFormat"/> enumeration members, indicating the document format.</param>
       <param name="sourceUri">A string representing the document URI.</param>
       <returns>true, if the document is successfully loaded; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.LoadDocumentTemplate(System.Byte[])">
+      <summary>
+        <para>Loads a document template from a byte array.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.LoadDocumentTemplate(System.Byte[],DevExpress.XtraRichEdit.DocumentFormat)">
+      <summary>
+        <para>Loads a document template in the specified format from a byte array.</para>
+      </summary>
+      <param name="buffer">A byte array that contains document data.</param>
+      <param name="documentFormat">An enumeration member that specifies the format of the loaded document.</param>
+      <returns>true if the document was successfully loaded; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.LoadDocumentTemplate(System.IO.Stream)">
       <summary>
@@ -38333,6 +38754,21 @@ Example: I, II, III</para>
       <summary>
         <para>For internal use.</para>
       </summary>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.SaveDocument(DevExpress.XtraRichEdit.DocumentFormat)">
+      <summary>
+        <para>Saves the document to a byte array in the specified file format.</para>
+      </summary>
+      <param name="documentFormat">An enumeration member that specifies the output document format.</param>
+      <returns>A byte array that contains data in the specified format.</returns>
+    </member>
+    <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.SaveDocument(DevExpress.XtraRichEdit.DocumentFormat,DevExpress.XtraRichEdit.API.Native.EncryptionSettings)">
+      <summary>
+        <para>Saves the document to a byte array in the specified file format and encrypts it with a password.</para>
+      </summary>
+      <param name="documentFormat">An enumeration member that specifies the output document format.</param>
+      <param name="encryptionSettings">Specifies encryption settings.</param>
+      <returns>A byte array that contains encrypted data in the specified format.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.RichEditDocumentServer.SaveDocument(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
       <summary>

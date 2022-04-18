@@ -108,6 +108,18 @@ This is a dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="P:DevExpress.Xpf.LayoutControl.DataLayoutControl.EditorValidationOrder">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.LayoutControl.DataLayoutControl.EditorValidationOrderProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.LayoutControl.DataLayoutControl.EditorValidationOrder"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
     <member name="F:DevExpress.Xpf.LayoutControl.DataLayoutControl.GeneratedItemNamePrefix">
       <summary>
         <para>The prefix for auto-generated item names. The GeneratedItemNamePrefix field is set to &quot;li&quot;.</para>
@@ -266,11 +278,6 @@ This is a dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
-    <member name="F:DevExpress.Xpf.LayoutControl.DataLayoutItem.AttributeSettingsProperty">
-      <summary>
-        <para>Identifies the <see cref="P:DevExpress.Xpf.LayoutControl.DataLayoutItem.AttributeSettings"/> dependency property.</para>
-      </summary>
-    </member>
     <member name="P:DevExpress.Xpf.LayoutControl.DataLayoutItem.Binding">
       <summary>
         <para>Gets or sets the Binding object for the current <see cref="T:DevExpress.Xpf.LayoutControl.DataLayoutItem"/>.</para>
@@ -282,13 +289,6 @@ This is a dependency property.</para>
         <para>Gets or sets the horizontal alignment for the layout item editor&#39;s value, if this value is formatted as currency.</para>
       </summary>
       <value>A <see cref="T:System.Windows.HorizontalAlignment"/> enumerator value that specifies the horizontal alignment for the layout item editor&#39;s value.</value>
-    </member>
-    <member name="M:DevExpress.Xpf.LayoutControl.DataLayoutItem.GetAttributeSettings(System.Windows.DependencyObject)">
-      <summary>
-        <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="obj"></param>
-      <returns></returns>
     </member>
     <member name="M:DevExpress.Xpf.LayoutControl.DataLayoutItem.GetUnderlyingObject(System.Windows.DependencyObject)">
       <summary>
@@ -1586,6 +1586,18 @@ This is a dependency property.</para>
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.LayoutControl.LayoutControl.TabHeaderTemplate"/> dependency property.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.LayoutControl.LayoutControl.UseContentBasedAlignment">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.LayoutControl.LayoutControl.UseContentBasedAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.LayoutControl.LayoutControl.UseContentBasedAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.LayoutControl.LayoutControl.UseContentMinSize">
       <summary>

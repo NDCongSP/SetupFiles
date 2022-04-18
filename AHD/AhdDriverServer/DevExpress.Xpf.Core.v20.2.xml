@@ -2698,9 +2698,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Bars.Bar.Background">
       <summary>
-        <para>Gets or sets the brush used to paint the Bar&#39;s background. This is a dependency property.</para>
+        <para>Gets or sets the brush used to paint the BarItem&#39;s background. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Media.Brush"/> object used to paint the Bar&#39;s background.</value>
+      <value>A <see cref="T:System.Windows.Media.Brush"/> object used to paint the BarItem&#39;s background.</value>
     </member>
     <member name="F:DevExpress.Xpf.Bars.Bar.BackgroundProperty">
       <summary>
@@ -2832,9 +2832,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Bars.Bar.Foreground">
       <summary>
-        <para>Gets or sets the brush used to paint the Bar&#39;s foreground. This is a dependency property.</para>
+        <para>Gets or sets the brush used to paint foreground of BarItem descedants. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Media.Brush"/> object used to paint the bar&#39;s foreground.</value>
+      <value>A <see cref="T:System.Windows.Media.Brush"/> object used to paint foreground of BarItem descedants.</value>
     </member>
     <member name="F:DevExpress.Xpf.Bars.Bar.ForegroundProperty">
       <summary>
@@ -15170,6 +15170,11 @@ This is a dependency property.</para>
         <para>The themed window displays no control buttons (Close, Minimize, Maximize).</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Xpf.Core.ControlBoxButtons.Restore">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.Core.DataObjectBase">
       <summary>
         <para>Represents the base for classes containing information about specific data-aware grid elements.</para>
@@ -25678,7 +25683,7 @@ This is a dependency property.</para>
       <summary>
         <para>Asynchronously preloads the specified theme and creates theme resources for all the loaded assemblies.</para>
       </summary>
-      <param name="themeName">A theme to preload.</param>
+      <param name="themeName">A theme you want to preload.</param>
       <param name="token">An object that indicates whether to cancel the action.</param>
       <param name="runTypeInitializers">true to invoke static constructors; otherwise, false.</param>
       <returns>A task that allows you to asynchronously return the preloaded theme.</returns>
@@ -28694,7 +28699,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.ButtonEdit">
       <summary>
-        <para>Represents a text editor with embedded buttons.</para>
+        <para>A text editor with embedded buttons.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Editors.ButtonEdit.#ctor">
@@ -31585,7 +31590,7 @@ This is a dependency property.</para>
     </member>
     <member name="E:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.RequestCellAppearance">
       <summary>
-        <para>Occurs when a cell state is changed and allows you to change the cell&#39;s appearance values.</para>
+        <para>Occurs when a date cell state is changed and allows you to change the date cell&#39;s appearance values.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.RequestCellAppearanceEvent">
@@ -32005,9 +32010,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.DateNavigator.DateNavigatorRequestCellAppearanceEventArgs.CacheValue">
       <summary>
-        <para>Gets or sets whether the event should cache the cell&#39;s appearance value in the specified state.</para>
+        <para>Gets or sets whether the event should cache the date cell&#39;s appearance value in the specified state.</para>
       </summary>
-      <value>true, to cache the cell&#39;s appearance value; otherwise, false.</value>
+      <value>true, to cache the date cell&#39;s appearance value; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Xpf.Editors.DateNavigator.DateNavigatorRequestCellAppearanceEventArgs.CalendarView">
       <summary>
@@ -39525,7 +39530,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.PasswordBoxEdit">
       <summary>
-        <para>Represents a control allowing you to enter and manage passwords.</para>
+        <para>A control allowing you to enter and manage passwords.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Editors.PasswordBoxEdit.#ctor">
@@ -39666,7 +39671,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.PopupBaseEdit">
       <summary>
-        <para>Serves as a base for classes that represent popup editors (e.g. <see cref="T:DevExpress.Xpf.Editors.DateEdit"/>, <see cref="T:DevExpress.Xpf.Editors.ComboBoxEdit"/>).</para>
+        <para>Serves as a base for classes that are popup editors (e.g. <see cref="T:DevExpress.Xpf.Editors.DateEdit"/>, <see cref="T:DevExpress.Xpf.Editors.ComboBoxEdit"/>).</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Editors.PopupBaseEdit.#ctor">
@@ -46253,7 +46258,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.SpinEdit">
       <summary>
-        <para>Represents an editor with spin buttons used to adjust a numerical value.</para>
+        <para>An editor with spin buttons used to adjust a numerical value.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Editors.SpinEdit.#ctor">
@@ -46722,7 +46727,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.TextEditBase">
       <summary>
-        <para>Serves as the base class for editors that provide the text editing capability (e.g. <see cref="T:DevExpress.Xpf.Editors.TextEdit"/>, <see cref="T:DevExpress.Xpf.Editors.ComboBoxEdit"/>, <see cref="T:DevExpress.Xpf.Editors.DateEdit"/>).</para>
+        <para>Serves as the base class for editors that have the text edit capability (e.g. <see cref="T:DevExpress.Xpf.Editors.TextEdit"/>, <see cref="T:DevExpress.Xpf.Editors.ComboBoxEdit"/>, <see cref="T:DevExpress.Xpf.Editors.DateEdit"/>).</para>
       </summary>
     </member>
     <member name="P:DevExpress.Xpf.Editors.TextEditBase.AcceptsReturn">

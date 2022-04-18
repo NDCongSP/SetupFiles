@@ -701,7 +701,7 @@
       </summary>
       <value></value>
     </member>
-    <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.HideInsignificantPartsInTimeSpanMask">
+    <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.HideInsignificantPartsOnlyInTimeSpanMask">
       <summary>
         <para></para>
       </summary>
@@ -833,6 +833,12 @@
       </summary>
       <value>true, to use the ThemedMessageBox; otherwise, false.</value>
     </member>
+    <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.UseThemedWaitIndicatorInSplashScreen">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.UseThemedWindowInServices">
       <summary>
         <para>Gets or sets whether to use the <see cref="T:DevExpress.Xpf.Core.ThemedWindow"/> instead of <see cref="T:DevExpress.Xpf.Core.DXWindow"/> in WindowService, DialogService, and WindowedDocumentUIService.</para>
@@ -841,9 +847,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.ValueAfterDeleteInNumericMask">
       <summary>
-        <para></para>
+        <para>Specifies whether editors set the 0 (zero) or null value after the last digit is removed.</para>
       </summary>
-      <value></value>
+      <value>A mode that specifies whether editors set the 0 (zero) or null value after the last digit is removed.</value>
     </member>
     <member name="T:DevExpress.Xpf.Core.DXBindingResolvingMode">
       <summary>
@@ -877,17 +883,17 @@
     </member>
     <member name="T:DevExpress.Xpf.Core.ValueAfterDeleteMode">
       <summary>
-        <para></para>
+        <para>Lists the values that specify the <see cref="P:DevExpress.Xpf.Editors.NumericMaskOptions.ValueAfterDelete"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Core.ValueAfterDeleteMode.Null">
       <summary>
-        <para></para>
+        <para>When a user removes the last digit, the editor value becomes null.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Core.ValueAfterDeleteMode.ZeroThenNull">
       <summary>
-        <para></para>
+        <para>When a user removes the last digit, the editor value becomes 0 (zero). If a user presses the Backspace or Delete key to remove this zero, the editor value becomes null.</para>
       </summary>
     </member>
   </members>

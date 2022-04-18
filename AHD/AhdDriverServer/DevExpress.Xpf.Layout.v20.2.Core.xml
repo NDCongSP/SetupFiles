@@ -124,5 +124,25 @@
         <para>Tab headers are displayed in a single row. Tab header text is trimmed, if required, to fit all the tabs in the row.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Layout.Core.TabHeaderPinLocation">
+      <summary>
+        <para>Contains values that identify tab header pin&#39;s locations.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Layout.Core.TabHeaderPinLocation.Default">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Layout.Core.TabHeaderPinLocation.Far">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Layout.Core.TabHeaderPinLocation.Near">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
   </members>
 </doc>

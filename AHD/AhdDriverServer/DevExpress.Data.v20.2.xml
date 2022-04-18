@@ -4890,6 +4890,23 @@ Day After Tomorrow &lt;= date &lt; First Day of Next Week</para>
       </summary>
       <value>A <see cref="T:System.Type"/> object.</value>
     </member>
+    <member name="T:DevExpress.Data.IDataContainerBase">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Data.IDataContainerBase.DataMember">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Data.IDataContainerBase.DataSource">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="T:DevExpress.Data.IDisplayNameProvider">
       <summary>
         <para>Provides methods that return custom names for the Field List items.</para>
@@ -11236,8 +11253,17 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
         <para>Creates a new SvgImage object from a vector image stored in project resources.</para>
       </summary>
       <param name="name">The name an icon has in resources.</param>
-      <param name="asm">The assembly name.</param>
+      <param name="assembly">The assembly name.</param>
       <returns>A newly created SvgImage.</returns>
+    </member>
+    <member name="M:DevExpress.Utils.Svg.SvgImage.FromStream(System.Collections.Generic.Dictionary{System.String,DevExpress.Utils.Svg.SvgImage}@,System.String,System.Reflection.Assembly)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="perThreadCache"></param>
+      <param name="name"></param>
+      <param name="assembly"></param>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.Utils.Svg.SvgImage.FromStream(System.IO.Stream)">
       <summary>

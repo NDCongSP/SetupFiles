@@ -6,7 +6,7 @@
   <members>
     <member name="N:DevExpress.Office.DigitalSignatures">
       <summary>
-        <para></para>
+        <para>Contains classes used to create signatures for PDF and Office documents.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Office.DigitalSignatures.CertificateStoreProvider">
@@ -143,10 +143,10 @@
     </member>
     <member name="M:DevExpress.Office.DigitalSignatures.ICrlClient.GetEncoded(System.Collections.Generic.IList{System.Byte[]})">
       <summary>
-        <para></para>
+        <para>Returns a list of CertificateList ASN.1 objects.</para>
       </summary>
-      <param name="chain"></param>
-      <returns></returns>
+      <param name="chain">A list of DER-encoded x509 certificates to check.</param>
+      <returns>A collection of DER- or BER-encoded CertificateList ASN.1 objects.</returns>
     </member>
     <member name="T:DevExpress.Office.DigitalSignatures.IDigestCalculator">
       <summary>
@@ -229,7 +229,7 @@
     </member>
     <member name="N:DevExpress.Office.Tsp">
       <summary>
-        <para></para>
+        <para>Contains classes used to add signature timestamps.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Office.Tsp.ITsaClient">
@@ -510,92 +510,92 @@
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeCaret">
       <summary>
-        <para></para>
+        <para>&quot;Insert Text&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeCircle">
       <summary>
-        <para></para>
+        <para>&quot;Oval&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeCustom">
       <summary>
-        <para></para>
+        <para>&quot;Custom&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeFileAttachment">
       <summary>
-        <para></para>
+        <para>&quot;File Attachment&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeFreeText">
       <summary>
-        <para></para>
+        <para>&quot;Text Box&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeHighlight">
       <summary>
-        <para></para>
+        <para>&quot;Highlight&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeInk">
       <summary>
-        <para></para>
+        <para>&quot;Pencil&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeLine">
       <summary>
-        <para></para>
+        <para>&quot;Line&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypePolygon">
       <summary>
-        <para></para>
+        <para>&quot;Polygon&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypePolyLine">
       <summary>
-        <para></para>
+        <para>&quot;Polygonal Line&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeRedaction">
       <summary>
-        <para></para>
+        <para>&quot;Redact&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeRubberStamp">
       <summary>
-        <para></para>
+        <para>&quot;Stamp&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeSound">
       <summary>
-        <para></para>
+        <para>&quot;Sound Attachment&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeSquare">
       <summary>
-        <para></para>
+        <para>&quot;Rectangle&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeSquiggly">
       <summary>
-        <para></para>
+        <para>&quot;Squiggly Underline&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeStrikethrough">
       <summary>
-        <para></para>
+        <para>&quot;Strikethrough&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeText">
       <summary>
-        <para></para>
+        <para>&quot;Sticky Note&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.AnnotationFilterTypeUnderline">
       <summary>
-        <para></para>
+        <para>&quot;Underline&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.DefaultDocumentName">
@@ -970,7 +970,7 @@
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.StickyNoteDefaultSubject">
       <summary>
-        <para></para>
+        <para>&quot;Note&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.Localization.PdfCoreStringId.TextHighlightDefaultSubject">
@@ -2112,44 +2112,44 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfAnnotationData">
       <summary>
-        <para></para>
+        <para>Base class for document annotations.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotationData.AnnotationType">
       <summary>
-        <para></para>
+        <para>Gets the annotation type.</para>
       </summary>
-      <value></value>
+      <value>The annotation type.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotationData.Bounds">
       <summary>
-        <para></para>
+        <para>Gets the annotation&#39;s bounds on the page.</para>
       </summary>
-      <value></value>
+      <value>The annotation&#39;s bounds.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotationData.Color">
       <summary>
-        <para></para>
+        <para>Specifies the annotation color.</para>
       </summary>
-      <value></value>
+      <value>The annotation color.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotationData.Contents">
       <summary>
-        <para></para>
+        <para>Specifies the annotation comment.</para>
       </summary>
-      <value></value>
+      <value>The annotation contents.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotationData.ModificationDate">
       <summary>
-        <para></para>
+        <para>Specifies the date and time when the annotation was last modified.</para>
       </summary>
-      <value></value>
+      <value>The annotation&#39;s modification date.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotationData.Name">
       <summary>
-        <para></para>
+        <para>Specifies the annotation&#39;s name.</para>
       </summary>
-      <value></value>
+      <value>The annotation name.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfAnnotationFlags">
       <summary>
@@ -2243,162 +2243,162 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfAnnotationReviewStatus">
       <summary>
-        <para></para>
+        <para>Lists values used to specify the annotation&#39;s review status.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationReviewStatus.Accepted">
       <summary>
-        <para></para>
+        <para>The annotation is reviewed and accepted.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationReviewStatus.Cancelled">
       <summary>
-        <para></para>
+        <para>The annotation is reviewed and cancelled.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationReviewStatus.Completed">
       <summary>
-        <para></para>
+        <para>The annotation is reviewed and completed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationReviewStatus.None">
       <summary>
-        <para></para>
+        <para>No review status.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationReviewStatus.Rejected">
       <summary>
-        <para></para>
+        <para>The annotation is reviewed and rejected.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfAnnotationType">
       <summary>
-        <para></para>
+        <para>Lists values used to indicate the annotation type.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Annotation3D">
       <summary>
-        <para></para>
+        <para>3D annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Caret">
       <summary>
-        <para></para>
+        <para>Insertion caret.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Circle">
       <summary>
-        <para></para>
+        <para>Circle annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Custom">
       <summary>
-        <para></para>
+        <para>Custom annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.FileAttachment">
       <summary>
-        <para></para>
+        <para>File attachment.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.FreeText">
       <summary>
-        <para></para>
+        <para>Free text annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Ink">
       <summary>
-        <para></para>
+        <para>Ink annotation (a freehand &quot;scribble&quot; composed of one or more disjoint paths).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Line">
       <summary>
-        <para></para>
+        <para>Line annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Link">
       <summary>
-        <para></para>
+        <para>Link annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Movie">
       <summary>
-        <para></para>
+        <para>Video attachment.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Polygon">
       <summary>
-        <para></para>
+        <para>Polygon annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.PolyLine">
       <summary>
-        <para></para>
+        <para>Polyline annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Popup">
       <summary>
-        <para></para>
+        <para>Pop-up annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.PrinterMark">
       <summary>
-        <para></para>
+        <para>Printer&#39;s mark annotation (a symbol added to a page to maintain consistent output during production).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Redaction">
       <summary>
-        <para></para>
+        <para>Redaction annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.RichMedia">
       <summary>
-        <para></para>
+        <para>Rich Media annotation (SWF files and and enhanced rich media attachments).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.RubberStamp">
       <summary>
-        <para></para>
+        <para>Stamp annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Screen">
       <summary>
-        <para></para>
+        <para>Screen annotation (a page region on which to play media clips).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Sound">
       <summary>
-        <para></para>
+        <para>Audio attachment.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Square">
       <summary>
-        <para></para>
+        <para>Rectangle annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Text">
       <summary>
-        <para></para>
+        <para>Text annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.TextMarkup">
       <summary>
-        <para></para>
+        <para>Text markup annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.TrapNet">
       <summary>
-        <para></para>
+        <para>Trap network (a set of trapping instructions for the page) annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Watermark">
       <summary>
-        <para></para>
+        <para>Watermark annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationType.Widget">
       <summary>
-        <para></para>
+        <para>Widget annotation.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfAssociatedFileRelationship">
@@ -3556,6 +3556,101 @@
         <para>Represents an image filter.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Pdf.PdfFilterAnnotationType">
+      <summary>
+        <para>Lists values that indicate the annotation type used in the filter.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Caret">
+      <summary>
+        <para>Insertion caret.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Circle">
+      <summary>
+        <para>Circle annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Custom">
+      <summary>
+        <para>Custom annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.FileAttachment">
+      <summary>
+        <para>File attachment.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.FreeText">
+      <summary>
+        <para>Free text annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Highlight">
+      <summary>
+        <para>Text highlight.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Ink">
+      <summary>
+        <para>Ink annotation (a freehand &quot;scribble&quot; composed of one or more disjoint paths).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Line">
+      <summary>
+        <para>Line annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Polygon">
+      <summary>
+        <para>Polygon annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.PolyLine">
+      <summary>
+        <para>Polyline annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Redact">
+      <summary>
+        <para>Redaction annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Sound">
+      <summary>
+        <para>Audio attachment.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Square">
+      <summary>
+        <para>Rectangle annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Squiggly">
+      <summary>
+        <para>Text squiggly underline.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Stamp">
+      <summary>
+        <para>Stamp annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.StrikeOut">
+      <summary>
+        <para>Text strikeout.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Text">
+      <summary>
+        <para>Text annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfFilterAnnotationType.Underline">
+      <summary>
+        <para>Text underline.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Pdf.PdfFitBBoxDestination">
       <summary>
         <para>Represents a destination that displays the page with its contents magnified just enough to fit its bounding box entirely within the window both horizontally and vertically.</para>
@@ -4691,9 +4786,9 @@
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotation.FilterType">
       <summary>
-        <para></para>
+        <para>Gets the type into which the annotation falls in the Type filter.</para>
       </summary>
-      <value></value>
+      <value>An enumeration value that indicates the annotation type.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotation.InReplyTo">
       <summary>
@@ -4745,185 +4840,185 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfMarkupAnnotationComment">
       <summary>
-        <para></para>
+        <para>Represents a comment added to an annotation.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationComment.AddReply(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Creates a nested comment.</para>
       </summary>
-      <param name="author"></param>
-      <param name="contents"></param>
-      <returns></returns>
+      <param name="author">The comment&#39;s author.</param>
+      <param name="contents">The comment&#39;s text.</param>
+      <returns>The nested comment.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationComment.AddReview(System.String,DevExpress.Pdf.PdfAnnotationReviewStatus)">
       <summary>
-        <para></para>
+        <para>Adds a review to the comment.</para>
       </summary>
-      <param name="author"></param>
-      <param name="status"></param>
+      <param name="author">The review&#39;s author.</param>
+      <param name="status">Review status.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationComment.AddReview(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Adds a review to the comment.</para>
       </summary>
-      <param name="author"></param>
-      <param name="status"></param>
+      <param name="author">The review&#39;s author.</param>
+      <param name="status">The review status.</param>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationComment.Author">
       <summary>
-        <para></para>
+        <para>Specifies the comment&#39;s author.</para>
       </summary>
-      <value></value>
+      <value>The comment&#39;s author.</value>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationComment.ClearReviews">
       <summary>
-        <para></para>
+        <para>Removes all reviews applied to the comment.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationComment.Contents">
       <summary>
-        <para></para>
+        <para>Gets or sets the comment contents.</para>
       </summary>
-      <value></value>
+      <value>The comment contents.</value>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationComment.Equals(System.Object)">
       <summary>
-        <para></para>
+        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.Pdf.PdfMarkupAnnotationComment"/> instance.</para>
       </summary>
-      <param name="obj"></param>
-      <returns></returns>
+      <param name="obj">The object to compare with the current object.</param>
+      <returns>true, if the specified object is equal to the current <see cref="T:DevExpress.Pdf.PdfMarkupAnnotationComment"/> instance; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationComment.GetHashCode">
       <summary>
-        <para></para>
+        <para>Returns a number that identifies the object instance.</para>
       </summary>
-      <returns></returns>
+      <returns>An integer that identifies the color instance.</returns>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationComment.ModificationDate">
       <summary>
-        <para></para>
+        <para>Gets or sets the date and time when the comment wae last modified.</para>
       </summary>
-      <value></value>
+      <value>The comment&#39;s modification date.</value>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationComment.RemoveReply(DevExpress.Pdf.PdfMarkupAnnotationComment)">
       <summary>
-        <para></para>
+        <para>Removes the specified nested comment.</para>
       </summary>
-      <param name="reply"></param>
-      <returns></returns>
+      <param name="reply">The comment that should be removed.</param>
+      <returns>true, if the comment is removed successfully; otherwise, false.</returns>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationComment.Replies">
       <summary>
-        <para></para>
+        <para>Retrieves all nested comments.</para>
       </summary>
-      <value></value>
+      <value>A list of comments.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationComment.Reviews">
       <summary>
-        <para></para>
+        <para>Retrieves the reviews applied to the comment.</para>
       </summary>
-      <value></value>
+      <value>A collection of reviews.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationComment.Subject">
       <summary>
-        <para></para>
+        <para>Gets or sets the subject of the comment.</para>
       </summary>
-      <value></value>
+      <value>The comment&#39;s subject.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfMarkupAnnotationData">
       <summary>
-        <para>Represents data common to all markup annotations.</para>
+        <para>Represents markup annotations.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationData.AddReply(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Adds a comment to the document annotation.</para>
       </summary>
-      <param name="author"></param>
-      <param name="contents"></param>
-      <returns></returns>
+      <param name="author">The comment&#39;s author.</param>
+      <param name="contents">The comment&#39;s text.</param>
+      <returns>The annotation comment.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationData.AddReview(System.String,DevExpress.Pdf.PdfAnnotationReviewStatus)">
       <summary>
-        <para></para>
+        <para>Adds a review to the annotation.</para>
       </summary>
-      <param name="author"></param>
-      <param name="reviewStatus"></param>
+      <param name="author">The author of the review.</param>
+      <param name="reviewStatus">The review status.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationData.AddReview(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Adds a review to the annotation.</para>
       </summary>
-      <param name="author"></param>
-      <param name="reviewStatus"></param>
+      <param name="author">The author of the review.</param>
+      <param name="reviewStatus">The review status.</param>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationData.Author">
       <summary>
-        <para>Specifies the author of a text markup annotation.</para>
+        <para>Specifies the annotation author.</para>
       </summary>
-      <value>A string that specifies the text markup annotation&#39;s author.</value>
+      <value>The annotation&#39;s author.</value>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationData.ClearReviews">
       <summary>
-        <para></para>
+        <para>Removes all reviews from the annotation.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationData.CreationDate">
       <summary>
-        <para>Specifies the date and time when the markup annotation was created on the page.</para>
+        <para>Specifies the date and time when the annotation was created.</para>
       </summary>
-      <value>A nullable <see cref="T:System.DateTimeOffset"/> structure that is the date and time of the markup annotation&#39;s creation on the page.</value>
+      <value>The date and time when the annotation was created.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationData.Opacity">
       <summary>
-        <para>Specifies the opacity value that is used in painting the annotation.</para>
+        <para>Specifies the annotation&#39;s opacity.</para>
       </summary>
-      <value>A double value that is the annotation opacity.</value>
+      <value>A double value that is the annotation opacity (from 0 to 1).</value>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationData.RemoveReply(DevExpress.Pdf.PdfMarkupAnnotationComment)">
       <summary>
-        <para></para>
+        <para>Removes the specific comment from the annotation.</para>
       </summary>
-      <param name="reply"></param>
-      <returns></returns>
+      <param name="reply">The comment to be removed.</param>
+      <returns>true, if the comment is deleted successfully; otherwise, false.</returns>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationData.Replies">
       <summary>
-        <para></para>
+        <para>Obtains the annotation comments.</para>
       </summary>
-      <value></value>
+      <value>A list of comments added to the annotation.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationData.Reviews">
       <summary>
-        <para></para>
+        <para>Obtains the annotation reviews.</para>
       </summary>
-      <value></value>
+      <value>A collection of reviews applied to the annotation.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationData.Subject">
       <summary>
         <para>Specifies a short description of the subject being addressed by the annotation.</para>
       </summary>
-      <value>A string value that specifies the text representing a short description of the subject.</value>
+      <value>A short description of the subject.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfMarkupAnnotationDataExtensions">
       <summary>
-        <para></para>
+        <para>Contains extension methods for the <see cref="T:DevExpress.Pdf.PdfMarkupAnnotationData"/> class.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationDataExtensions.AsTextAnnotation(DevExpress.Pdf.PdfMarkupAnnotationData)">
       <summary>
-        <para></para>
+        <para>Casts the <see cref="T:DevExpress.Pdf.PdfMarkupAnnotationData"/> object to the <see cref="T:DevExpress.Pdf.PdfTextAnnotationData"/> object.</para>
       </summary>
-      <param name="data"></param>
-      <returns></returns>
+      <param name="data">Current PdfMarkupAnnotationData object.</param>
+      <returns>The text annotation.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationDataExtensions.AsTextMarkupAnnotation(DevExpress.Pdf.PdfMarkupAnnotationData)">
       <summary>
-        <para></para>
+        <para>Casts the <see cref="T:DevExpress.Pdf.PdfMarkupAnnotationData"/> object to the <see cref="T:DevExpress.Pdf.PdfTextMarkupAnnotationData"/> object.</para>
       </summary>
-      <param name="data"></param>
-      <returns></returns>
+      <param name="data">Current PdfMarkupAnnotationData object.</param>
+      <returns>The text markup annotation.</returns>
     </member>
     <member name="T:DevExpress.Pdf.PdfMarkupAnnotationReplyType">
       <summary>
@@ -4942,33 +5037,33 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfMarkupAnnotationReview">
       <summary>
-        <para></para>
+        <para>Represents the review added to an annotation or comment.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationReview.Author">
       <summary>
-        <para></para>
+        <para>Retrieves the annotation&#39;s author.</para>
       </summary>
-      <value></value>
+      <value>The annotation&#39;s author.</value>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationReview.Equals(System.Object)">
       <summary>
-        <para></para>
+        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.Pdf.PdfMarkupAnnotationReview"/> instance.</para>
       </summary>
-      <param name="obj"></param>
-      <returns></returns>
+      <param name="obj">The object to compare with the current object.</param>
+      <returns>true, if the specified object is equal to the current <see cref="T:DevExpress.Pdf.PdfMarkupAnnotationReview"/> instance; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfMarkupAnnotationReview.GetHashCode">
       <summary>
-        <para></para>
+        <para>Returns a number that identifies the object instance.</para>
       </summary>
-      <returns></returns>
+      <returns>An integer that identifies the color instance.</returns>
     </member>
     <member name="P:DevExpress.Pdf.PdfMarkupAnnotationReview.Status">
       <summary>
-        <para></para>
+        <para>Retrieves the review status.</para>
       </summary>
-      <value></value>
+      <value>The review status.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfMetadata">
       <summary>
@@ -5574,9 +5669,9 @@
     </member>
     <member name="M:DevExpress.Pdf.PdfPage.GetPageIndex">
       <summary>
-        <para></para>
+        <para>Returns the page index.</para>
       </summary>
-      <returns></returns>
+      <returns>The page index.</returns>
     </member>
     <member name="P:DevExpress.Pdf.PdfPage.ID">
       <summary>
@@ -6461,6 +6556,26 @@
       <param name="x">A <see cref="T:System.Double"/> value. This value is assigned to the <see cref="P:DevExpress.Pdf.PdfPoint.X"/> property.</param>
       <param name="y">A <see cref="T:System.Double"/> value. This value is assigned to the <see cref="P:DevExpress.Pdf.PdfPoint.Y"/> property.</param>
     </member>
+    <member name="M:DevExpress.Pdf.PdfPoint.Equals(DevExpress.Pdf.PdfPoint)">
+      <summary>
+        <para>Determines whether the specified object is equal to the current PdfPoint object.</para>
+      </summary>
+      <param name="pt">A PdfPoint to compare with the current object.</param>
+      <returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPoint.Equals(System.Object)">
+      <summary>
+        <para>Determines whether the specified object is equal to the current PdfPoint object.</para>
+      </summary>
+      <param name="obj">A point to compare with the current object.</param>
+      <returns>true if the specified object is equal to the current object; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPoint.GetHashCode">
+      <summary>
+        <para>Returns a number that identifies the object instance.</para>
+      </summary>
+      <returns>The hash code for the current object.</returns>
+    </member>
     <member name="M:DevExpress.Pdf.PdfPoint.op_Addition(DevExpress.Pdf.PdfPoint,DevExpress.Pdf.PdfPoint)">
       <summary>
         <para>Adds a PdfPoint object to the PdfPoint object and returns the result as the PdfPoint object.</para>
@@ -6484,6 +6599,22 @@
       <param name="value1">A PdfPoint value that is the dividend.</param>
       <param name="value2">A <see cref="T:System.Double"/> value that is the divisor.</param>
       <returns>A <see cref="T:DevExpress.Pdf.PdfPoint"/> object that is the result of dividing.</returns>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPoint.op_Equality(DevExpress.Pdf.PdfPoint,DevExpress.Pdf.PdfPoint)">
+      <summary>
+        <para>Compares two <see cref="T:DevExpress.Pdf.PdfPoint"/> structures for equality.</para>
+      </summary>
+      <param name="left">The first <see cref="T:DevExpress.Pdf.PdfPoint"/> instance to compare.</param>
+      <param name="right">The second <see cref="T:DevExpress.Pdf.PdfPoint"/> instance to compare.</param>
+      <returns>true, if two <see cref="T:DevExpress.Pdf.PdfPoint"/> objects are equal; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfPoint.op_Inequality(DevExpress.Pdf.PdfPoint,DevExpress.Pdf.PdfPoint)">
+      <summary>
+        <para>Compares two <see cref="T:DevExpress.Pdf.PdfPoint"/> structures to determine whether they are not equal.</para>
+      </summary>
+      <param name="left">The first instance to compare.</param>
+      <param name="right">The second instance to compare.</param>
+      <returns>true, if two <see cref="T:DevExpress.Pdf.PdfPoint"/> objects are not equal; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPoint.op_Multiply(DevExpress.Pdf.PdfPoint,DevExpress.Pdf.PdfPoint)">
       <summary>
@@ -7372,9 +7503,9 @@
     </member>
     <member name="P:DevExpress.Pdf.PdfTextAnnotation.FilterType">
       <summary>
-        <para></para>
+        <para>Gets the type into which the annotation falls in the Type filter.</para>
       </summary>
-      <value></value>
+      <value>An enumeration value that indicates the annotation type.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfTextAnnotation.IconName">
       <summary>
@@ -7402,115 +7533,115 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfTextAnnotationData">
       <summary>
-        <para></para>
+        <para>Represents a text annotation.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfTextAnnotationData.IconName">
       <summary>
-        <para></para>
+        <para>Specifies the name of the annotation icon.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfTextAnnotationIconName">
       <summary>
-        <para></para>
+        <para>Contains names of built-in annotation icons.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Check">
       <summary>
-        <para></para>
+        <para>Checkmark icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Circle">
       <summary>
-        <para></para>
+        <para>Circle icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Comment">
       <summary>
-        <para></para>
+        <para>&quot;Comment&quot; icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Cross">
       <summary>
-        <para></para>
+        <para>Cross icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.CrossHairs">
       <summary>
-        <para></para>
+        <para>Cross Hairs icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Help">
       <summary>
-        <para></para>
+        <para>Help icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Insert">
       <summary>
-        <para></para>
+        <para>Insert Text icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Key">
       <summary>
-        <para></para>
+        <para>Key icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.NewParagraph">
       <summary>
-        <para></para>
+        <para>New Paragraph icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Note">
       <summary>
-        <para></para>
+        <para>Text Note icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Paragraph">
       <summary>
-        <para></para>
+        <para>Paragraph icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.RightArrow">
       <summary>
-        <para></para>
+        <para>Right Arrow icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.RightPointer">
       <summary>
-        <para></para>
+        <para>Right Pointer icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.Star">
       <summary>
-        <para></para>
+        <para>Star icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.UpArrow">
       <summary>
-        <para></para>
+        <para>Up Arrow icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="F:DevExpress.Pdf.PdfTextAnnotationIconName.UpLeftArrow">
       <summary>
-        <para></para>
+        <para>Up-Left Arrow icon name.</para>
       </summary>
-      <value></value>
+      <value>The icon name.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfTextExtractionOptions">
       <summary>
@@ -7578,9 +7709,9 @@
     </member>
     <member name="P:DevExpress.Pdf.PdfTextMarkupAnnotation.FilterType">
       <summary>
-        <para></para>
+        <para>Gets the type into which the annotation falls in the Type filter.</para>
       </summary>
-      <value></value>
+      <value>An enumeration value that indicates the annotation type.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfTextMarkupAnnotation.Quads">
       <summary>
@@ -7596,7 +7727,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfTextMarkupAnnotationData">
       <summary>
-        <para>Represents text markup annotation data.</para>
+        <para>Represents a text markup annotation.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfTextMarkupAnnotationData.MarkupType">
@@ -7607,7 +7738,7 @@
     </member>
     <member name="P:DevExpress.Pdf.PdfTextMarkupAnnotationData.Quads">
       <summary>
-        <para>Gets a collection of quadrilaterals that encompass the text markup annotation drawing area.</para>
+        <para>Gets a collection of quadrilaterals that encompass the text markup annotation&#39;s drawing area.</para>
       </summary>
       <value>An array of <see cref="T:DevExpress.Pdf.PdfQuadrilateral"/> objects that represent the quadrilaterals points.</value>
     </member>

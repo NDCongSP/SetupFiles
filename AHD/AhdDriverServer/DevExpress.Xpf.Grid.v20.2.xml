@@ -16562,9 +16562,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeViewControl.AutoScrollCurrentNode">
       <summary>
-        <para>Gets or sets whether to horizontally scroll the view when a user clicks a node that does not fit the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>.</para>
+        <para>Gets or sets whether to horizontally scroll the view when a user focuses a node that does not fit the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>. This is a dependency property.</para>
       </summary>
-      <value>true to horizontally scroll the view when a user clicks a node that does not fit the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>; otherwise, false</value>
+      <value>true to horizontally scroll the view when a user focuses a node that does not fit the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>; otherwise, false</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeViewControl.AutoScrollCurrentNodeProperty">
       <summary>
@@ -16574,7 +16574,7 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeViewControl.AutoWidthMode">
       <summary>
-        <para>Gets or sets how to calculate the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>&#39;s width, by the maximum width of visible nodes or by the maximum width of a collapsed node.</para>
+        <para>Gets or sets how to calculate the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>&#39;s width, by the maximum width of the longest visible node or by the maximum width of the longest node that was ever visible.</para>
       </summary>
       <value>Specifies how to calculate the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>&#39;s width.</value>
     </member>
@@ -16776,6 +16776,17 @@ If the value is null, the rows number is 20.</value>
         <para>Allows you to use custom rules to sort data.</para>
       </summary>
     </member>
+    <member name="E:DevExpress.Xpf.Grid.TreeViewControl.CustomScrollAnimation">
+      <summary>
+        <para>Allows you to create a custom animation when <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/> data is vertically scrolled (per-pixel).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Grid.TreeViewControl.CustomScrollAnimationEvent">
+      <summary>
+        <para>Identifies the <see cref="E:DevExpress.Xpf.Grid.TreeViewControl.CustomScrollAnimation"/> routed event.</para>
+      </summary>
+      <value>A routed event identifier.</value>
+    </member>
     <member name="M:DevExpress.Xpf.Grid.TreeViewControl.DeleteNode(DevExpress.Xpf.Grid.TreeListNode,System.Boolean)">
       <summary>
         <para>Removes the specified node and optionally, all its children.</para>
@@ -16939,6 +16950,18 @@ If the value is null, the rows number is 20.</value>
     <member name="F:DevExpress.Xpf.Grid.TreeViewControl.FetchSublevelChildrenOnExpandProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.Grid.TreeViewControl.FetchSublevelChildrenOnExpand"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Grid.TreeViewControl.FilteringMode">
+      <summary>
+        <para>Gets or sets how the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/> filters its nodes.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Xpf.Grid.TreeListFilteringMode"/> enumeration value that specifies how the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/> filters its nodes.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Grid.TreeViewControl.FilteringModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Grid.TreeViewControl.FilteringMode"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -17272,9 +17295,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeViewControl.NodeContentStyle">
       <summary>
-        <para>Gets or sets the style applied to data nodes. This is a dependency property.</para>
+        <para>Gets or sets the style applied to node content. This is a dependency property.</para>
       </summary>
-      <value>The style applied to data nodes.</value>
+      <value>The style applied to node content.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeViewControl.NodeContentStyleProperty">
       <summary>
@@ -17481,6 +17504,18 @@ If the value is null, the rows number is 20.</value>
         <para>Reloads the image for the specified node.</para>
       </summary>
       <param name="node">The node whose image should be reloaded.</param>
+    </member>
+    <member name="P:DevExpress.Xpf.Grid.TreeViewControl.RestoreTreeStateOnClearFilter">
+      <summary>
+        <para>Gets or sets whether to restore the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/> state (expanded nodes, selected node) when a user clears the filter. This is a dependency property.</para>
+      </summary>
+      <value>true to restore the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/> state; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Grid.TreeViewControl.RestoreTreeStateOnClearFilterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Grid.TreeViewControl.RestoreTreeStateOnClearFilter"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeViewControl.RootValue">
       <summary>
@@ -17795,22 +17830,6 @@ If the value is null, the rows number is 20.</value>
         <para>Gets the total number of nodes displayed in the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>.</para>
       </summary>
       <value>The total number of nodes displayed in the <see cref="T:DevExpress.Xpf.Grid.TreeViewControl"/>.</value>
-    </member>
-    <member name="T:DevExpress.Xpf.Grid.TreeViewControlView">
-      <summary>
-        <para></para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.Xpf.Grid.TreeViewControlView.#ctor">
-      <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Grid.TreeViewControlView"/> class.</para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.Xpf.Grid.TreeViewControlView.ScrollIntoView(System.Int32)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="rowHandle"></param>
     </member>
   </members>
 </doc>

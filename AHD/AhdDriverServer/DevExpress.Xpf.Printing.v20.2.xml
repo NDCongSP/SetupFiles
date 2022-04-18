@@ -24,12 +24,6 @@
         <para>Identifies the <see cref="P:DevExpress.Xpf.Printing.BackstagePrintPreview.ActualPreview"/> dependency property.</para>
       </summary>
     </member>
-    <member name="F:DevExpress.Xpf.Printing.BackstagePrintPreview.ActualPreviewPropertyKey">
-      <summary>
-        <para>Identifies the read-only <see cref="P:DevExpress.Xpf.Printing.BackstagePrintPreview.ActualPreview"/> dependency property.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Xpf.Printing.BackstagePrintPreview.CustomSettings">
       <summary>
         <para>Specifies custom options to display on the left side of <see cref="T:DevExpress.Xpf.Printing.BackstagePrintPreview"/>.</para>
@@ -107,12 +101,6 @@
         <para>Identifies the <see cref="P:DevExpress.Xpf.Printing.BackstagePrintPreview.PrintOptions"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
-    </member>
-    <member name="F:DevExpress.Xpf.Printing.BackstagePrintPreview.PrintOptionsPropertyKey">
-      <summary>
-        <para>Identifies the read-only <see cref="P:DevExpress.Xpf.Printing.BackstagePrintPreview.PrintOptions"/> dependency property.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Printing.BackstagePrintPreview.PrintOptionsTemplate">
       <summary>
@@ -629,12 +617,6 @@
         <para>Identifies the <see cref="P:DevExpress.Xpf.Printing.DocumentPreviewControl.ActualNavigationPaneSettings"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
-    </member>
-    <member name="F:DevExpress.Xpf.Printing.DocumentPreviewControl.ActualNavigationPaneSettingsPropertyKey">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Printing.DocumentPreviewControl.AllowCachePages">
       <summary>
@@ -1208,12 +1190,6 @@
         <para>Identifies the <see cref="P:DevExpress.Xpf.Printing.DocumentPreviewControl.ThumbnailsSettings"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
-    </member>
-    <member name="F:DevExpress.Xpf.Printing.DocumentPreviewControl.ThumbnailsSettingsPropertyKey">
-      <summary>
-        <para>Identifies the read-only <see cref="P:DevExpress.Xpf.Printing.DocumentPreviewControl.ThumbnailsSettings"/> dependency property.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Printing.DocumentPreviewControl.ToggleDocumentMapCommand">
       <summary>
@@ -4401,12 +4377,6 @@
       </summary>
       <value>true, to open the resulting file; otherwise, false.</value>
     </member>
-    <member name="P:DevExpress.Xpf.Printing.PreviewControl.ExportOptionsViewModel.SettingsType">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Xpf.Printing.PreviewControl.ExportOptionsViewModelBase">
       <summary>
         <para>A base class for View Models that provide options for exporting documents.</para>
@@ -4423,12 +4393,6 @@
         <para>Specifies the format for exporting a document.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.ExportFormat"/> enumeration value.</value>
-    </member>
-    <member name="P:DevExpress.Xpf.Printing.PreviewControl.ExportOptionsViewModelBase.ExportOptionLines">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Printing.PreviewControl.ExportOptionsViewModelBase.ExportOptions">
       <summary>
@@ -4682,12 +4646,6 @@
       </summary>
       <value>A <see cref="T:System.Windows.Thickness"/> object specifying the margins of a document page.</value>
     </member>
-    <member name="P:DevExpress.Xpf.Printing.PreviewControl.PageViewModel.SetPageMarginCommand">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Xpf.Printing.PreviewControl.PageViewModelBase">
       <summary>
         <para>A base class for View Models that provide settings to a document page.</para>
@@ -4782,12 +4740,6 @@
         <para>Specifies the range of document pages to print.</para>
       </summary>
       <value>A string that specifies the range of pages.</value>
-    </member>
-    <member name="P:DevExpress.Xpf.Printing.PreviewControl.PrintOptionsViewModel.DataPagerSource">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Printing.PreviewControl.PrintOptionsViewModel.Duplex">
       <summary>
@@ -4890,12 +4842,6 @@
       </summary>
       <param name="printRange">A <see cref="T:System.Drawing.Printing.PrintRange"/> enumeration value.</param>
     </member>
-    <member name="P:DevExpress.Xpf.Printing.PreviewControl.PrintOptionsViewModel.SettingsType">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Xpf.Printing.PreviewControl.PrintOptionsViewModel.ShowFileReplacingRequest">
       <summary>
         <para>For internal use.</para>
@@ -4962,12 +4908,6 @@
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Printing.ScaleMode"/> enumeration value.</value>
     </member>
-    <member name="P:DevExpress.Xpf.Printing.PreviewControl.ScaleOptionsViewModel.SettingsType">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Xpf.Printing.PreviewControl.ScaleOptionsViewModel.ValidatePagesToFit(System.Object)">
       <summary>
         <para>For internal use.</para>
@@ -5007,12 +4947,6 @@
         <para>Gets the settings that specify how a document is exported and sent via e-mail.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPrinting.EmailOptions"/> object that provides the e-mail settings.</value>
-    </member>
-    <member name="P:DevExpress.Xpf.Printing.PreviewControl.SendOptionsViewModel.SettingsType">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Xpf.Printing.PreviewCustomCursors">
       <summary>
@@ -7676,6 +7610,11 @@ An object implementing the <see cref="T:DevExpress.Xpf.Printing.IDialogService"/
     <member name="F:DevExpress.Xpf.Printing.PrintingStringId.PdfSignatureEditorWindow_ContactInformation">
       <summary>
         <para>The description of the Contact Information field in the Signature Options dialog.Default value: &quot;Contact Information:&quot;</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Printing.PrintingStringId.PdfSignatureEditorWindow_Image">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Printing.PrintingStringId.PdfSignatureEditorWindow_Location">

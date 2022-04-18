@@ -3915,18 +3915,6 @@
       </summary>
       <value>A dependency property identifier.</value>
     </member>
-    <member name="P:DevExpress.Xpf.Grid.ColumnBase.ActualHorizontalContentAlignment">
-      <summary>
-        <para>Gets the actual content&#39;s horizontal alignment. This is a dependency property.</para>
-      </summary>
-      <value>A <see cref="T:System.Windows.HorizontalAlignment"/> enumeration value that specifies the content&#39;s horizontal alignment.</value>
-    </member>
-    <member name="F:DevExpress.Xpf.Grid.ColumnBase.ActualHorizontalContentAlignmentProperty">
-      <summary>
-        <para>Identifies the <see cref="P:DevExpress.Xpf.Grid.ColumnBase.ActualHorizontalContentAlignment"/> dependency property.</para>
-      </summary>
-      <value>A dependency property identifier.</value>
-    </member>
     <member name="P:DevExpress.Xpf.Grid.ColumnBase.ActualNewItemRowCellStyle">
       <summary>
         <para>Gets the actual style applied to the column&#39;s cell displayed within the New Item Row.</para>
@@ -13045,6 +13033,11 @@ If all values in the date-time column are set to null, all check boxes are visib
         <para>Represents the caption of the fix row popup menu item that fixes the row at the top of the grid.Return Value: &quot;Top&quot;.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Xpf.Grid.GridControlRuntimeStringId.MergedGroupsSeparator">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.Xpf.Grid.GridControlRuntimeStringId.NavigationAddNewRow">
       <summary>
         <para>Return Value: Append</para>
@@ -15313,6 +15306,11 @@ the values in this column.</para>
     <member name="F:DevExpress.Xpf.Grid.GridControlStringId.MenuRowFixedTop">
       <summary>
         <para>Represents the caption of the fix row popup menu item that fixes the row at the top of the grid.Return Value: &quot;Top&quot;.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Grid.GridControlStringId.MergedGroupsSeparator">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Grid.GridControlStringId.NavigationAddNewRow">
