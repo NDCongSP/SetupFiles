@@ -39,6 +39,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_92EB005F87024D99A3A3B1818A0F302D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_AB0DA17F2B0F42C4BE323D895DF0C94C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -47,12 +53,6 @@
         {
         "MsmKey" = "8:_B6B925FA5ABF0D7ABE2DE6FEC3BA2799"
         "OwnerKey" = "8:_67600003352E4765A8F2459E901D211F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_D991DF37D5674178B516889BD9E514C9"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -233,6 +233,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_92EB005F87024D99A3A3B1818A0F302D"
+            {
+            "SourcePath" = "8:..\\..\\CreatingKey\\UserInfo.ini"
+            "TargetName" = "8:UserInfo.ini"
+            "Tag" = "8:"
+            "Folder" = "8:_56482BB7CD0144EB930CF8B73B239BE1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AB0DA17F2B0F42C4BE323D895DF0C94C"
             {
             "SourcePath" = "8:..\\..\\CreatingKey\\CreatingLicenseKey.exe.config"
@@ -282,26 +302,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D991DF37D5674178B516889BD9E514C9"
-            {
-            "SourcePath" = "8:..\\..\\CreatingKey\\UserInfo.ini"
-            "TargetName" = "8:UserInfo.ini"
-            "Tag" = "8:"
-            "Folder" = "8:_56482BB7CD0144EB930CF8B73B239BE1"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F83BEBEAD5234767B0AA0C68A800D67C"
@@ -392,7 +392,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:AhdLicenseKey"
         "ProductCode" = "8:{80676151-D1B6-47EB-8610-6D40D3608AA2}"
-        "PackageCode" = "8:{5841FB1B-2B3B-4DF7-B6EE-9A9ABD2D9AF5}"
+        "PackageCode" = "8:{2133BD1F-9215-4EE7-A5F2-4D088CB14D22}"
         "UpgradeCode" = "8:{1B568A16-1586-400D-B079-00E3BEEA13E4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
