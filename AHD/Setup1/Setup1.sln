@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{885BEEA9-DECA-4FDA-BBCD-06DA579494A4}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupKey", "SetupKey\SetupKey.vdproj", "{2642CB7A-58AD-4780-90B3-A26075D0EDCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -15,6 +17,8 @@ Global
 		{885BEEA9-DECA-4FDA-BBCD-06DA579494A4}.Debug|Default.Build.0 = Debug
 		{885BEEA9-DECA-4FDA-BBCD-06DA579494A4}.Release|Default.ActiveCfg = Release
 		{885BEEA9-DECA-4FDA-BBCD-06DA579494A4}.Release|Default.Build.0 = Release
+		{2642CB7A-58AD-4780-90B3-A26075D0EDCE}.Debug|Default.ActiveCfg = Debug
+		{2642CB7A-58AD-4780-90B3-A26075D0EDCE}.Release|Default.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
